@@ -1,0 +1,134 @@
+.chess-page {
+  --chess-paper: #fcfbf8;
+  --chess-sand: #f6f3ec;
+  --chess-ink: #0f2a2e;
+  --chess-green: #14454b;
+  --chess-gold: #b08e63;
+  --chess-muted: #4e7175;
+  --chess-line: rgba(20, 69, 75, .18);
+  color: var(--chess-ink);
+  background: var(--chess-paper);
+}
+.chess-page * { box-sizing: border-box; }
+.chess-container { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+.chess-page h1, .chess-page h2, .chess-page h3 { font-family: Prata, Georgia, serif; font-weight: 400; }
+.chess-page p { text-wrap: pretty; }
+.chess-hero { background: var(--chess-sand); padding: 44px 0 56px; }
+.chess-hero-grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); gap: clamp(40px, 6vw, 82px); align-items: center; }
+.chess-hero-copy { max-width: 540px; }
+.chess-back { display: inline-block; margin-bottom: 28px; font-size: 13px; color: var(--chess-muted); text-decoration: none; padding: 5px 0; }
+.chess-back:hover { color: var(--chess-ink); }
+.chess-eyebrow { display: block; color: var(--chess-muted); font-size: 11px; line-height: 1.5; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; margin-bottom: 18px; }
+.chess-page h1 { font-size: clamp(42px, 4.8vw, 65px); line-height: 1.17; letter-spacing: -.025em; margin: 0 0 28px; }
+.chess-intro { font-size: 17px; line-height: 1.8; font-weight: 400; color: var(--chess-ink); }
+.chess-intro p + p { margin-top: 18px; }
+.chess-hero-booking { margin-top: 30px; }
+.chess-booking-label { font-size: 14px; line-height: 1.5; font-weight: 600; margin-bottom: 12px; }
+.chess-contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.chess-button { min-height: 52px; display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; min-width: 174px; padding: 13px 22px; border: 1px solid var(--chess-green); border-radius: 3px; font-size: 14px; line-height: 1.6; font-weight: 500; text-decoration: none; transition: background .18s ease, color .18s ease; }
+.chess-button-solid { color: white; background: var(--chess-green); }
+.chess-button-outline { color: var(--chess-green); background: transparent; }
+.chess-button-solid:hover { background: var(--chess-ink); border-color: var(--chess-ink); }
+.chess-button-outline:hover { background: var(--chess-green); color: white; }
+.chess-button:active { opacity: .85; }
+.chess-page a:focus-visible { outline: 2px solid var(--chess-green); outline-offset: 5px; }
+.chess-hero-photo { margin: 0; width: 100%; max-width: 382px; justify-self: end; }
+.chess-hero-photo img { display: block; width: 100%; height: auto; border-radius: 0; }
+.chess-about { padding: 62px 0; border-bottom: 1px solid var(--chess-line); }
+.chess-about-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 6vw, 82px); align-items: center; }
+.chess-about h2 { font-size: clamp(24px, 2.35vw, 31px); line-height: 1.35; letter-spacing: -.01em; }
+.chess-hundred { display: block; color: var(--chess-gold); font-size: clamp(62px, 6.3vw, 84px); line-height: 1; margin-bottom: 15px; }
+.chess-about-copy { font-size: 17px; font-weight: 400; line-height: 1.85; }
+.chess-about-copy p + p { margin-top: 22px; }
+.chess-formats { padding: 56px 0 60px; }
+.chess-formats h2 { font-size: clamp(27px, 2.8vw, 37px); margin-bottom: 30px; }
+.chess-format-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--chess-line); border-bottom: 1px solid var(--chess-line); }
+.chess-format { padding: 30px 36px 30px 0; }
+.chess-format + .chess-format { border-left: 1px solid var(--chess-line); padding: 30px 0 30px 36px; }
+.chess-format-top { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
+.chess-format h3 { font-size: clamp(20px, 1.8vw, 25px); line-height: 1.4; }
+.chess-duration { white-space: nowrap; color: var(--chess-muted); font-size: 14px; }
+.chess-format-description { color: var(--chess-muted); font-size: 14px; line-height: 1.7; margin-top: 10px; }
+.chess-price { display: flex; align-items: baseline; gap: 12px; margin-top: 25px; }
+.chess-price strong { font-size: 29px; line-height: 1.35; font-weight: 500; letter-spacing: -.025em; white-space: nowrap; }
+.chess-price span { font-size: 13px; color: var(--chess-muted); }
+.chess-final-booking { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 36px; }
+.chess-final-booking h3 { font-size: 24px; line-height: 1.45; }
+.chess-final-booking p { margin-top: 6px; font-size: 14px; color: var(--chess-muted); }
+@media (min-width: 1600px) { .chess-hero-photo { max-width: 390px; } }
+@media (max-width: 1000px) {
+  .chess-container { width: calc(100% - 48px); }
+  .chess-hero-grid { gap: 32px; grid-template-columns: 1.1fr .9fr; }
+  .chess-back { margin-bottom: 20px; }
+  .chess-intro { font-size: 16px; line-height: 1.7; }
+  .chess-button { min-width: 145px; padding-inline: 16px; gap: 20px; }
+  .chess-about-grid { gap: 36px; }
+  .chess-final-booking { align-items: flex-start; flex-direction: column; }
+  .chess-format { padding-right: 24px; }
+  .chess-format + .chess-format { padding-left: 24px; }
+  .chess-format-top { flex-direction: column; gap: 7px; }
+}
+@media (max-width: 700px) {
+  .chess-container { width: calc(100% - 40px); }
+  .chess-hero { padding: 22px 0 30px; }
+  .chess-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .chess-hero-copy { max-width: none; }
+  .chess-back { margin-bottom: 19px; }
+  .chess-eyebrow { font-size: 10px; margin-bottom: 13px; }
+  .chess-page h1 { font-size: clamp(39px, 10.8vw, 58px); line-height: 1.15; margin-bottom: 22px; }
+  .chess-intro { font-size: 16px; line-height: 1.75; }
+  .chess-intro p + p { margin-top: 15px; }
+  .chess-hero-booking { margin-top: 24px; }
+  .chess-contact-links { flex-wrap: nowrap; width: 100%; }
+  .chess-button { flex: 1; min-width: 0; min-height: 50px; gap: 10px; padding: 12px 15px; font-size: 13px; }
+  .chess-hero-photo { max-width: 390px; width: 100%; justify-self: center; }
+  .chess-about { padding: 34px 0; }
+  .chess-about-grid { grid-template-columns: 1fr; gap: 22px; }
+  .chess-about h2 { font-size: 26px; }
+  .chess-hundred { font-size: 65px; margin-bottom: 9px; }
+  .chess-about-copy { font-size: 16px; line-height: 1.8; }
+  .chess-about-copy p + p { margin-top: 18px; }
+  .chess-formats { padding: 34px 0 40px; }
+  .chess-formats h2 { font-size: 29px; margin-bottom: 22px; }
+  .chess-format-grid { grid-template-columns: 1fr; }
+  .chess-format, .chess-format + .chess-format { padding: 25px 0; border-left: none; }
+  .chess-format + .chess-format { border-top: 1px solid var(--chess-line); }
+  .chess-format-top { flex-direction: row; align-items: baseline; gap: 12px; }
+  .chess-format h3 { font-size: 20px; }
+  .chess-price { margin-top: 18px; }
+  .chess-final-booking { margin-top: 26px; gap: 17px; width: 100%; }
+  .chess-final-booking h3 { font-size: 23px; }
+  .chess-final-booking .chess-contact-links { width: 100%; }
+}
+@media (max-width: 360px) {
+  .chess-container { width: calc(100% - 32px); }
+  .chess-format-top { flex-direction: column; gap: 4px; }
+  .chess-button { padding-inline: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .chess-button { transition: none; } }
+
+/* Separate, explicit booking consent; never preset or bundled with advertising. */
+.chess-booking-controls { width: 100%; max-width: 460px; }
+.chess-consent-label { display: flex; align-items: flex-start; gap: 10px; font-size: 12px; line-height: 1.7; font-weight: 400; min-height: 44px; margin: 0 0 12px; cursor: pointer; }
+.chess-consent-label input { appearance: auto; flex: 0 0 auto; accent-color: var(--chess-green); width: 18px; height: 18px; margin: 2px 0 0; cursor: pointer; }
+.chess-consent-label a, .chess-legal a { color: var(--chess-green); text-decoration: underline; text-underline-offset: 3px; }
+.chess-consent-label a:hover, .chess-legal a:hover { color: var(--chess-ink); }
+.chess-consent-hint { font-size: 11px; line-height: 1.7; color: var(--chess-muted); margin-top: 8px; }
+.chess-page .chess-button { cursor: pointer; }
+.chess-page .chess-button:disabled { color: #697c7f; background: #e5e7e3; border-color: #b5bebb; cursor: not-allowed; opacity: 1; }
+.chess-page .chess-button:focus-visible { outline: 2px solid var(--chess-green); outline-offset: 4px; }
+.chess-final-booking { align-items: flex-start; }
+.chess-legal { padding: 35px 0 38px; background: var(--chess-sand); border-top: 1px solid var(--chess-line); }
+.chess-legal h2 { font-size: 23px; line-height: 1.4; margin-bottom: 18px; }
+.chess-legal-copy { max-width: 910px; font-size: 13px; line-height: 1.8; font-weight: 400; }
+.chess-legal-copy p + p { margin-top: 12px; }
+.chess-legal-footer { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--chess-line); font-size: 11px; line-height: 1.8; color: var(--chess-muted); }
+.chess-legal-footer > a { display: inline-block; margin-top: 9px; }
+@media (max-width: 700px) {
+  .chess-consent-label { font-size: 12px; }
+  .chess-consent-hint { font-size: 11px; }
+  .chess-legal { padding: 28px 0 30px; }
+  .chess-legal h2 { font-size: 22px; }
+  .chess-legal-copy { font-size: 13px; }
+  .chess-legal-footer { font-size: 12px; }
+}
