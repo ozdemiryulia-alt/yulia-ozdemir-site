@@ -1,0 +1,108 @@
+/* Compact vertical rhythm: preserve content, typography, media and horizontal layout. */
+.section-padding { padding-block: 40px; }
+.hero-section { min-height: 0; padding-block: 40px 44px; }
+.inner-hero,
+.compact-inner-hero,
+.chooser-hero { min-height: 0; padding-block: 38px 42px; }
+.hero-actions { margin-top: 26px; }
+.section-intro h2 { margin-bottom: 24px; }
+.section-lead { margin-block: 14px 22px; }
+
+/* Reduce stacked-column gaps only; keep existing horizontal grid alignment. */
+.home-about-layout,
+.home-reviews-heading,
+.inner-hero-grid,
+.recognition-grid,
+.work-grid,
+.offer-card,
+.about-page-grid,
+.two-column-copy,
+.about-requests-layout,
+.about-where,
+.faq-layout,
+.legal-layout,
+.migrated-copy-layout,
+.migrated-split-grid,
+.migrated-videos-heading,
+.review-submit-layout { row-gap: 24px; }
+.faq-group { margin-bottom: 28px; }
+.faq-group:last-child { margin-bottom: 0; }
+.migrated-videos-heading { margin-bottom: 24px; }
+.migrated-format-card { min-height: 0; padding-block: 24px; row-gap: 20px; }
+
+.site-footer { padding-top: 32px; }
+.footer-top { row-gap: 24px; }
+.footer-bottom { margin-top: 28px; }
+
+/* Approved standalone game pages use their own section classes. */
+.chess-hero { padding-block: 28px 32px; }
+.chess-about { padding-block: 34px; }
+.chess-formats { padding-block: 32px 36px; }
+.chess-back { margin-bottom: 20px; }
+.chess-formats h2 { margin-bottom: 22px; }
+.chess-format,
+.chess-format + .chess-format { padding-block: 22px; }
+.chess-final-booking { margin-top: 26px; }
+.chess-legal { padding-block: 26px 28px; }
+
+.health-hero { padding-block: 28px 32px; }
+.health-about,
+.health-results { padding-block: 34px; }
+.health-process,
+.health-videos { padding-block: 32px 36px; }
+.health-formats { padding-block: 30px 34px; }
+.health-back { margin-bottom: 18px; }
+.health-process h2,
+.health-videos h2,
+.health-formats h2 { margin-bottom: 22px; }
+.health-final-booking { margin-top: 26px; }
+
+@media (max-width: 700px) {
+  .section-padding { padding-block: 26px; }
+  .hero-section { min-height: 0; padding-block: 30px 34px; }
+  .inner-hero,
+  .compact-inner-hero,
+  .chooser-hero { min-height: 0; padding-block: 28px 30px; }
+  .hero-actions { margin-top: 24px; }
+  .section-lead { margin-block: 12px 18px; }
+  .home-about-layout,
+  .home-reviews-heading,
+  .inner-hero-grid,
+  .recognition-grid,
+  .work-grid,
+  .offer-card,
+  .about-page-grid,
+  .two-column-copy,
+  .about-requests-layout,
+  .about-where,
+  .faq-layout,
+  .legal-layout,
+  .migrated-copy-layout,
+  .migrated-split-grid,
+  .migrated-videos-heading,
+  .review-submit-layout { row-gap: 22px; }
+  .home-contact-layout { row-gap: 24px; }
+  .faq-group { margin-bottom: 24px; }
+  .faq-group:last-child { margin-bottom: 0; }
+  .site-footer { padding-top: 28px; }
+  .footer-top { row-gap: 22px; }
+  .footer-bottom { margin-top: 22px; }
+  .chess-hero { padding-block: 18px 24px; }
+  .chess-about,
+  .chess-formats,
+  .chess-legal { padding-block: 24px; }
+  .chess-back { margin-bottom: 16px; }
+  .chess-format,
+  .chess-format + .chess-format { padding-block: 20px; }
+  .chess-final-booking { margin-top: 22px; }
+  .health-hero { padding-block: 20px 24px; }
+  .health-about,
+  .health-process,
+  .health-results,
+  .health-videos,
+  .health-formats { padding-block: 24px; }
+  .health-back { margin-bottom: 16px; }
+  .health-process-grid { row-gap: 16px; }
+  .health-video-grid { row-gap: 24px; }
+  .health-final-booking { margin-top: 22px; }
+}
