@@ -1,0 +1,42 @@
+/* Homepage spacing repair, 2026-11-07. Copy, images and routes stay unchanged. */
+@media (min-width: 801px) {
+  .home-hero.hero-section {
+    min-height: 0;
+    padding: 32px 0;
+  }
+
+  .home-paths.section-padding {
+    padding-top: 32px;
+  }
+}
+
+.about-session-group .home-session-copy h2 {
+  margin-bottom: 28px;
+}
+
+.about-session-group .home-session-copy p + p {
+  margin-top: 24px;
+}
+
+.about-session-group .home-session-details {
+  gap: 24px;
+}
+
+.about-session-group .home-session-details .home-session-meta {
+  line-height: 1.85;
+}
+
+.about-session-group .home-session-details .home-session-price,
+.about-session-group .home-session-details .home-session-messengers {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .about-session-group .home-session-copy h2 {
+    margin-bottom: 24px;
+  }
+
+  .about-session-group .home-session-copy p + p {
+    margin-top: 20px;
+  }
+}
