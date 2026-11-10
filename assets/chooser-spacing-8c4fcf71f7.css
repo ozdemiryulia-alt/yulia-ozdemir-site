@@ -1,0 +1,47 @@
+/* Request chooser only: compact introduction and contact fallback. */
+main .chooser-hero.inner-hero {
+  padding-bottom: 18px;
+}
+main .chooser-hero + .chooser-section {
+  padding-top: 18px;
+  padding-bottom: 24px;
+}
+main .chooser-section .chooser-help {
+  margin-top: 24px;
+  padding: 20px 24px;
+  gap: 24px;
+}
+main .chooser-section .chooser-help > div:first-child {
+  flex: 1;
+  min-width: 0;
+}
+main .chooser-section .chooser-help h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  margin: 8px 0 10px;
+}
+main .chooser-section .chooser-help p {
+  max-width: none;
+}
+main .chooser-section .chooser-help .hero-actions {
+  flex-shrink: 0;
+}
+main .chooser-section .chooser-help .button-secondary {
+  border-color: #d9c7ae;
+}
+@media (max-width: 800px) {
+  main .chooser-hero + .chooser-section {
+    padding-bottom: 20px;
+  }
+  main .chooser-section .chooser-help {
+    margin-top: 20px;
+    padding: 16px 18px;
+    gap: 14px;
+  }
+  main .chooser-section .chooser-help h2 {
+    font-size: 26px;
+  }
+  main .chooser-section .chooser-help .hero-actions {
+    width: 100%;
+  }
+}
