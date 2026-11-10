@@ -1,0 +1,16 @@
+/* Only the recovery request page; the site's amber design is preserved. */
+.recovery-page .inner-hero-grid p + p { margin-top: 18px; }
+.recovery-page .why-card p + p { margin-top: 18px; }
+.recovery-page .work-list { grid-template-columns: 1fr; }
+.recovery-page .recovery-work-item {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #d9c7ae;
+}
+.recovery-page .recovery-work-item svg { margin-top: 5px; }
+.recovery-page .recovery-work-item p { margin: 0; font-size: 16px; line-height: 1.7; }
+.recovery-page .request-reviews-heading { max-width: 940px; }
+.recovery-page .request-reviews-heading p { max-width: 800px; font-size: 16px; line-height: 1.7; }
