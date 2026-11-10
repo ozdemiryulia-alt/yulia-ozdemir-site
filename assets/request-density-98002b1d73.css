@@ -1,0 +1,44 @@
+/* Recovery request page only: compact rhythm, unchanged text and visual identity. */
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .section-padding { padding-block: 24px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .inner-hero { padding-block: 28px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .inner-hero-grid { column-gap: 32px; align-items: start; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) :is(.recognition-grid h2, .work-grid h2) br { display: none; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .recognition-grid {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 18px 32px;
+  align-items: start;
+}
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .recognition-list p { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .why-card { padding: 24px 0; grid-template-columns: minmax(0, 1fr); border-left: 0; text-align: left; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .why-symbol { display: none; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .work-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .work-grid h2 { max-width: 1000px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .work-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .work-list > span { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .section-intro h2 { margin-bottom: 18px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .appointment-steps article { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .request-reviews-heading { max-width: 920px; margin-bottom: 20px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .request-reviews-heading p { max-width: 800px; }
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .request-reviews .review-card { min-height: 0; }
+@media (max-width: 800px) {
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .section-padding { padding-block: 20px; }
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .inner-hero { padding-block: 24px; }
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .inner-hero-grid { row-gap: 18px; }
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .recognition-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .work-list { grid-template-columns: minmax(0, 1fr); }
+  main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .why-card { padding: 22px 0; }
+}
+
+/* With five health topics, the final item spans the existing two-column grid. */
+main:has(#reviews-health, #reviews-transition) .work-list > span:nth-child(5):last-child { grid-column: 1 / -1; }
+
+/* Four real testimonials form two balanced rows on these request pages. */
+main:has(#reviews-recovery, #reviews-health, #reviews-change, #reviews-transition) .request-reviews .review-grid > .scroll-reveal:last-child { grid-column: auto; }
+
+/* The supplied closing copy uses the existing final CTA, without an empty side column. */
+main:has(#reviews-change, #reviews-transition) .page-cta-inner { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+main:has(#reviews-change, #reviews-transition) .page-cta-inner h2 { max-width: 1000px; }
+main:has(#reviews-change, #reviews-transition) .request-closing-copy { max-width: 800px; margin-top: 18px; font-size: 17px; line-height: 1.7; color: #514941; }
+main:has(#reviews-change, #reviews-transition) .page-cta-inner .button { justify-self: start; }
+main:has(#reviews-change, #reviews-transition) .review-grid > .scroll-reveal:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media(max-width:800px) { main:has(#reviews-change, #reviews-transition) .request-closing-copy { font-size: 16px; } main:has(#reviews-change, #reviews-transition) .page-cta-inner .button { justify-self: stretch; } }
