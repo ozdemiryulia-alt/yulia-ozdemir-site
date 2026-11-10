@@ -1,0 +1,36 @@
+/* Recovery request page only: compact rhythm, unchanged text and visual identity. */
+main:has(#reviews-recovery, #reviews-health) .section-padding { padding-block: 24px; }
+main:has(#reviews-recovery, #reviews-health) .inner-hero { padding-block: 28px; }
+main:has(#reviews-recovery, #reviews-health) .inner-hero-grid { column-gap: 32px; align-items: start; }
+main:has(#reviews-recovery, #reviews-health) :is(.recognition-grid h2, .work-grid h2) br { display: none; }
+main:has(#reviews-recovery, #reviews-health) .recognition-grid {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 18px 32px;
+  align-items: start;
+}
+main:has(#reviews-recovery, #reviews-health) .recognition-list p { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health) .why-card { padding: 24px 0; grid-template-columns: minmax(0, 1fr); border-left: 0; text-align: left; }
+main:has(#reviews-recovery, #reviews-health) .why-symbol { display: none; }
+main:has(#reviews-recovery, #reviews-health) .work-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+main:has(#reviews-recovery, #reviews-health) .work-grid h2 { max-width: 1000px; }
+main:has(#reviews-recovery, #reviews-health) .work-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+main:has(#reviews-recovery, #reviews-health) .work-list > span { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health) .section-intro h2 { margin-bottom: 18px; }
+main:has(#reviews-recovery, #reviews-health) .appointment-steps article { min-height: 0; padding-block: 12px; }
+main:has(#reviews-recovery, #reviews-health) .request-reviews-heading { max-width: 920px; margin-bottom: 20px; }
+main:has(#reviews-recovery, #reviews-health) .request-reviews-heading p { max-width: 800px; }
+main:has(#reviews-recovery, #reviews-health) .request-reviews .review-card { min-height: 0; }
+@media (max-width: 800px) {
+  main:has(#reviews-recovery, #reviews-health) .section-padding { padding-block: 20px; }
+  main:has(#reviews-recovery, #reviews-health) .inner-hero { padding-block: 24px; }
+  main:has(#reviews-recovery, #reviews-health) .inner-hero-grid { row-gap: 18px; }
+  main:has(#reviews-recovery, #reviews-health) .recognition-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  main:has(#reviews-recovery, #reviews-health) .work-list { grid-template-columns: minmax(0, 1fr); }
+  main:has(#reviews-recovery, #reviews-health) .why-card { padding: 22px 0; }
+}
+
+/* With five health topics, the final item spans the existing two-column grid. */
+main:has(#reviews-health) .work-list > span:nth-child(5):last-child { grid-column: 1 / -1; }
+
+/* Four real testimonials form two balanced rows on these request pages. */
+main:has(#reviews-recovery, #reviews-health) .request-reviews .review-grid > .scroll-reveal:last-child { grid-column: auto; }
