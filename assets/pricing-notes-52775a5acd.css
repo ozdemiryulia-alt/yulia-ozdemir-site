@@ -1,0 +1,4 @@
+/* Price clarification uses the existing Manrope secondary-caption style. */
+.pricing-list .pricing-price-note { display:block; max-width:100%; margin-top:8px; font-family:"Manrope",sans-serif; font-size:14px; font-weight:500; line-height:1.5; color:#817365; white-space:normal; overflow-wrap:break-word; }
+
+.pricing-list .pricing-main p .pricing-games-label { font-family:inherit; font-size:inherit; font-weight:600; line-height:inherit; color:#b08e63; }
