@@ -1,0 +1,17 @@
+/* Existing milk-and-amber design; pictures have intrinsic proportions, never cropped. */
+main .amber-illustrated-hero :is(.inner-hero-grid,.compact-hero-content) { grid-template-columns:minmax(0,1fr); gap:24px; align-items:start; }
+main .amber-illustrated-hero :is(.inner-hero-grid,.compact-hero-content) > h1 { max-width:100% !important; }
+main .amber-illustrated-hero :is(.inner-hero-grid,.compact-hero-content) > :is(div,p) { width:100%; max-width:940px !important; min-width:0; }
+.site-amber-picture { padding:0 0 32px; }
+.site-amber-picture figure { margin:0; padding:0; border:0; }
+.site-amber-picture img { display:block; width:100%; height:auto; max-width:100%; border:0; border-radius:0; }
+main:has(.site-amber-picture) .work-grid { grid-template-columns:minmax(0,1fr); gap:18px; }
+main:has(.site-amber-picture) .work-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
+main:has(.site-amber-picture) .work-list > span:nth-child(5):last-child { grid-column:1/-1; }
+main:has(.site-amber-picture) .why-card { grid-template-columns:minmax(0,1fr); padding-inline:0; border-left:0; text-align:left; }
+main:has(.site-amber-picture) .why-symbol { display:none; }
+@media(max-width:800px) {
+  main .amber-illustrated-hero :is(.inner-hero-grid,.compact-hero-content) { gap:20px; }
+  .site-amber-picture { padding-bottom:24px; }
+  main:has(.site-amber-picture) .work-list { grid-template-columns:minmax(0,1fr); }
+}
