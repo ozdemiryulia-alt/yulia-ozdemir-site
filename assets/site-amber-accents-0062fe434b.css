@@ -1,0 +1,7 @@
+/* Approved emphasis colour from Yulia's reference; inline meaning, not decorative badges. */
+main { --site-emphasis: #b08e63; }
+main .site-keyphrase,
+main :is(p,li) strong { color: var(--site-emphasis) !important; font-weight: 600; }
+main .site-keyphrase { background: none; padding: 0; border: 0; white-space: normal; }
+main .site-keyphrase-text { display:inline !important; padding:0 !important; margin:0 !important; border:0 !important; min-height:0 !important; font:inherit !important; color:inherit; }
+main :is(.offer-section,.migrated-format-section,.booking-summary,.dark-section) { --site-emphasis: #fbf8f1; }
