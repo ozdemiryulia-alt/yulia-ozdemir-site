@@ -1,0 +1,26 @@
+/* About-page closing block only: retain the existing amber palette and typography. */
+main .section-padding.about-final-section { padding-block: 32px; }
+.about-final-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: 24px 40px;
+  align-items: start;
+  text-align: left;
+}
+.about-final-layout > div { min-width: 0; }
+.about-final-layout h2 { margin: 12px 0 0; }
+.about-final-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 30px;
+}
+.about-final-copy p { margin: 0; font-size: 17px; line-height: 1.7; color: #514941; }
+@media (max-width: 800px) {
+  main .section-padding.about-final-section { padding-block: 24px; }
+  .about-final-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .about-final-copy { padding-top: 0; }
+  .about-final-copy p { font-size: 16px; }
+  .about-final-copy .button { width: 100%; justify-content: center; }
+}
