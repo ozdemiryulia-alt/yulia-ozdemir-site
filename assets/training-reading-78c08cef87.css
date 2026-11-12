@@ -1,0 +1,7 @@
+/* Only training: visible course links and coherent paragraph rhythm. */
+main:has(#reviews-training) .training-degree-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; width:100%; margin-top:20px; }
+main:has(#reviews-training) .training-degree-links a { display:flex; align-items:center; justify-content:center; min-width:0; min-height:48px; padding:12px 16px; box-sizing:border-box; border:1px solid #d9c7ae; color:#9b6a32; font-size:16px; font-weight:600; line-height:1.5; letter-spacing:normal; text-transform:none; text-decoration:none; white-space:normal; text-align:center; }
+main:has(#reviews-training) .training-degree-links a:hover { background:#f0e6d7; border-color:#9b6a32; }
+main:has(#reviews-training) .training-degree-links a:focus-visible { outline:2px solid #9b6a32; outline-offset:3px; }
+main:has(#reviews-training) .training-text-paragraph + .training-text-paragraph { margin-top:16px; }
+@media(max-width:800px) { main:has(#reviews-training) .training-degree-links { grid-template-columns:minmax(0,1fr); } main:has(#reviews-training) .training-text-paragraph + .training-text-paragraph { margin-top:14px; } }
