@@ -1,0 +1,22 @@
+/* Mobile readability corrections. Existing colours, fonts and desktop layout remain. */
+main:has(#reviews-health, #reviews-change, #reviews-transition) .why-section .training-text-paragraph { display: block; }
+main:has(#reviews-health, #reviews-change, #reviews-transition) .why-section .training-text-paragraph + .training-text-paragraph { margin-top: 14px; }
+/* Emphasis must never inherit the amount's Prata/19px typography. */
+main .pricing-included .site-keyphrase { font-size: inherit !important; font-family: inherit !important; line-height: inherit !important; font-weight: 600 !important; }
+@media (max-width: 800px) {
+  main { --site-emphasis: #7c6446; }
+  main .site-keyphrase,
+  main:has(#reviews-training) .site-keyphrase,
+  main :is(p,li) strong { color: var(--site-emphasis) !important; }
+  main .appointment-steps article p,
+  main .request-reviews-heading p { font-size: 16px; line-height: 1.75; }
+  main .pricing-list .pricing-main > p { font-size: 16px; line-height: 1.65; }
+  main .pricing-included > span { font-size: 16px; line-height: 1.65; }
+  main .pricing-included small { font-size: 12px; line-height: 1.5; }
+  .site-header .mobile-menu-toggle { width: 44px; height: 44px; flex: 0 0 44px; }
+}
+@media (max-width: 600px) {
+  main .migrated-video-grid { grid-template-columns: minmax(0,1fr) !important; gap: 20px; }
+  main .migrated-video-grid > * { min-width: 0; }
+  main .migrated-video-copy h3 { overflow-wrap: anywhere; }
+}
