@@ -1,0 +1,660 @@
+/* Approved amber design system, extended to all existing routes. Content and JS are untouched. */
+:root {
+  --water-050: #fbf8f1;
+  --water-100: #f0e6d7;
+  --water-200: #ecdcc5;
+  --water-500: #b38a57;
+  --water-700: #9b6a32;
+  --water-900: #342419;
+  --ink-900: #2f2923;
+  --ink-700: #514941;
+  --ink-500: #817365;
+  --air-050: #fbf8f1;
+  --air-100: #f0e6d7;
+  --sand-200: #f0e6d7;
+  --sand-400: #d9c7ae;
+  --sand-600: #9b6a32;
+  --text-body: #514941;
+  --text-muted: #817365;
+  --line: #d9c7ae;
+  --shadow: none;
+  --background: #fbf8f1;
+  --foreground: #2f2923;
+  --card: #fbf8f1;
+  --card-foreground: #2f2923;
+  --popover: #fffdf8;
+  --popover-foreground: #2f2923;
+  --primary: #9b6a32;
+  --primary-foreground: #fbf8f1;
+  --secondary: #f0e6d7;
+  --secondary-foreground: #2f2923;
+  --muted: #f0e6d7;
+  --muted-foreground: #817365;
+  --accent: #f0e6d7;
+  --accent-foreground: #2f2923;
+  --border: #d9c7ae;
+  --input: #d9c7ae;
+  --ring: #9b6a32;
+}
+::selection { background: #f0e6d7; color: #2f2923; }
+
+/* Home has its own already-approved rules. All following content rules are scoped to inner pages. */
+main:not(:has(.home-hero)) { color: #2f2923; background: #fbf8f1; }
+main:not(:has(.home-hero)) .page-width { width: min(1120px, calc(100% - 56px)); }
+main:not(:has(.home-hero)) :is(h1,h2,h3) { font-family: Prata, Georgia, serif; font-weight: 400; text-wrap: pretty; color: #2f2923; }
+main:not(:has(.home-hero)) h1 { font-size: clamp(38px, 4.6vw, 60px); line-height: 1.2; letter-spacing: 0; }
+main:not(:has(.home-hero)) h2 { font-size: clamp(28px, 3vw, 42px); line-height: 1.25; letter-spacing: 0; }
+main:not(:has(.home-hero)) h3 { font-size: clamp(22px, 2vw, 26px); line-height: 1.35; }
+main:not(:has(.home-hero)) .eyebrow { color: #9b6a32; font-size: 11px; font-weight: 600; line-height: 1.6; letter-spacing: .14em; }
+main:not(:has(.home-hero)) :is(p,li) { text-wrap: pretty; overflow-wrap: break-word; }
+main:not(:has(.home-hero)) :is(.inner-hero p,.section-lead,.recognition-list p,.request-choice-row p,.migrated-copy-text p,.about-page-grid p,.about-where p) { font-size: 17px; line-height: 1.7; color: #514941; }
+main:not(:has(.home-hero)) :is(.work-list span,.method-detail-list p,.direction-card p,.faq-list details p,.legal-list p,.education-grid p,.about-timeline p) { font-size: 16px; line-height: 1.7; }
+main:not(:has(.home-hero)) :is(.section-padding,.soft-section) { padding-block: 40px; }
+main:not(:has(.home-hero)) :is(.inner-hero,.compact-inner-hero,.chooser-hero) { padding-block: 38px 42px; min-height: 0; background: #fbf8f1; }
+main:not(:has(.home-hero)) .inner-hero::before {
+  content: ''; display: block; position: absolute; inset: 0; z-index: -1;
+  background-image: linear-gradient(90deg, rgba(251,248,241,.97), rgba(251,248,241,.65)), url('./amber-reviews-approved-ee48f86faf.webp');
+  background-position: center, center 25%; background-size: cover, 100% auto; background-repeat: no-repeat; opacity: 1;
+}
+main:not(:has(.home-hero)) .hero-section::before,
+main:not(:has(.home-hero)) .hero-section::after { content: none; background: none; }
+main:not(:has(.home-hero)) :is(.hero-orbit,.inner-orbit) { display: none; }
+main:not(:has(.home-hero)) .section-intro h2 { margin: 12px 0 24px; }
+main:not(:has(.home-hero)) :is(.inner-hero-grid,.recognition-grid,.work-grid,.offer-card,.two-column-copy,.about-requests-layout,.about-where,.migrated-copy-layout,.migrated-split-grid,.migrated-videos-heading,.split-intro) {
+  grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr);
+  column-gap: 40px; row-gap: 24px; min-width: 0;
+}
+main:not(:has(.home-hero)) :is(.inner-hero-grid,.recognition-grid,.work-grid,.offer-card,.about-requests-layout,.migrated-copy-layout,.migrated-split-grid,.page-cta-inner) > * { min-width: 0; }
+
+/* Consistent editorial rows: no layout-jumping hover padding. */
+main:not(:has(.home-hero)) :is(.request-choice-row,.direction-card,.pricing-list article,.method-detail-list article,.education-grid article) { border-color: #d9c7ae; }
+main:not(:has(.home-hero)) .request-choice-row { grid-template-columns: 44px minmax(0,1fr) 24px; gap: 16px; min-height: 0; padding: 24px 0; }
+main:not(:has(.home-hero)) .request-choice-row h2 { font-size: 25px; margin-bottom: 12px; }
+main:not(:has(.home-hero)) .request-choice-row:hover { padding-left: 0; background: rgba(240,230,215,.35); }
+main:not(:has(.home-hero)) .direction-card:hover { background: rgba(240,230,215,.35); }
+main:not(:has(.home-hero)) :is(.method-detail-list h2,.certificates-summary-copy strong) { font-size: 28px; }
+main:not(:has(.home-hero)) :is(.pricing-list h3,.migrated-video-copy h3) { font-size: 22px; }
+main:not(:has(.home-hero)) :is(.pricing-list strong,.choice-number) { color: #9b6a32; }
+main:not(:has(.home-hero)) :is(.inline-link,.quiet-link,.text-button,.method-links a,.booking-note a,.faq-aside a,.review-source-link,.review-video-content a) { color: #9b6a32; border-color: #d9c7ae; }
+main:not(:has(.home-hero)) :is(.inline-link,.quiet-link,.text-button,.method-links a,.booking-note a,.faq-aside a,.review-source-link,.review-video-content a):hover { color: #805523; border-color: #9b6a32; }
+
+/* Calls to action reuse the approved first-session layout. */
+main:not(:has(.home-hero)) .page-cta { color: #2f2923; background: #fbf8f1; border-top: 1px solid #d9c7ae; }
+main:not(:has(.home-hero)) .page-cta-inner { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: 24px 40px; align-items: center; }
+main:not(:has(.home-hero)) .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+main:not(:has(.home-hero)) .button { min-height: 48px; padding: 13px 22px; border-radius: 0; font-size: 14px; line-height: 1.5; font-weight: 600; box-shadow: none; max-width: 100%; text-align: center; }
+main:not(:has(.home-hero)) .button-primary { color: #fbf8f1; border-color: #9b6a32; background: #9b6a32; }
+main:not(:has(.home-hero)) .button-primary:hover { color: #fbf8f1; background: #805523; border-color: #805523; transform: none; }
+main:not(:has(.home-hero)) .button-outline { color: #9b6a32; border-color: #9b6a32; background: transparent; }
+main:not(:has(.home-hero)) .button-outline:hover { color: #805523; border-color: #805523; background: #f0e6d7; transform: none; }
+main:not(:has(.home-hero)) .button:disabled { opacity: .55; cursor: not-allowed; }
+main:not(:has(.home-hero)) :is(a,button,summary,input,textarea,select):focus-visible { outline: 2px solid #9b6a32; outline-offset: 4px; }
+
+/* Existing portraits stay authentic; square corners, substantial right column. */
+main:not(:has(.home-hero)) .about-page-grid { grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: 40px; align-items: start; }
+main:not(:has(.home-hero)) .about-page-portrait { grid-column: 2; grid-row: 1; width: 100%; max-width: none; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+main:not(:has(.home-hero)) .about-page-grid > div:not(.about-page-portrait) { grid-column: 1; grid-row: 1; min-width: 0; }
+main:not(:has(.home-hero)) .about-page-portrait img { display: block; width: 100%; height: auto; border-radius: 0; }
+main:not(:has(.home-hero)) :is(.certificate-card,.legal-aside,.migrated-video-card,.review-card) { border-radius: 0; box-shadow: none; border-color: #d9c7ae; background-color: #fbf8f1; }
+main:not(:has(.home-hero)) .certificate-card:hover { transform: none; border-color: #9b6a32; box-shadow: none; }
+main:not(:has(.home-hero)) :is(.certificate-zoom,.certificate-lightbox-close) { border-radius: 0; }
+main:not(:has(.home-hero)) .certificate-lightbox { background-color: rgba(52,36,25,.87); }
+main:not(:has(.home-hero)) .review-card { padding: 24px; }
+main:not(:has(.home-hero)) .review-card blockquote { color: #2f2923; font-family: Prata, Georgia, serif; font-size: 17px; line-height: 1.65; }
+main:not(:has(.home-hero)) .review-card footer { border-color: #d9c7ae; }
+main:not(:has(.home-hero)) .migrated-video-card video { background-color: #342419; }
+
+/* Dark format/offer panels keep contrast while matching the warm footer. */
+main:not(:has(.home-hero)) :is(.offer-section,.migrated-format-section,.booking-summary) { background-color: #342419; color: #fbf8f1; }
+main:not(:has(.home-hero)) :is(.offer-section,.migrated-format-section,.booking-summary) :is(h2,h3,strong) { color: #fbf8f1; }
+main:not(:has(.home-hero)) :is(.offer-section,.migrated-format-section,.booking-summary) :is(p,.offer-note) { color: #eee2d3; }
+main:not(:has(.home-hero)) .offer-details > span { color: #d9c7ae; }
+main:not(:has(.home-hero)) .migrated-format-card { background: transparent; border: 0; box-shadow: none; }
+main:not(:has(.home-hero)) :is(.offer-section,.migrated-format-section,.booking-summary) .button-outline { color: #fbf8f1; border-color: #d9c7ae; }
+main:not(:has(.home-hero)) :is(.offer-section,.migrated-format-section,.booking-summary) .button-outline:hover { color: #342419; background: #f0e6d7; }
+
+/* The same approved translucent refractions behind existing testimonial sections. */
+main:not(:has(.home-hero)) :is(.request-reviews,.migrated-videos-section) {
+  background-color: #fbf8f1;
+  background-image: url('./amber-reviews-approved-ee48f86faf.webp');
+  background-position: center top; background-repeat: repeat-y; background-size: 100% auto;
+}
+
+/* Standalone legal documents: only typography/color; wording and anchors unchanged. */
+body.legal-document { background: #fbf8f1; color: #514941; font-family: Manrope, Arial, sans-serif; font-size: 17px; line-height: 1.8; }
+.legal-document main { width: min(820px, calc(100% - 40px)); margin: 32px auto 48px; }
+.legal-document :is(h1,h2) { color: #2f2923; font-family: Prata, Georgia, serif; font-weight: 400; }
+.legal-document h1 { font-size: clamp(27px, 4vw, 38px); }
+.legal-document h2 { font-size: 24px; }
+.legal-document a { color: #9b6a32; }
+.legal-document .meta { font-family: Manrope, Arial, sans-serif; color: #817365; }
+.legal-document .note { border-color: #d9c7ae; }
+.legal-document a:focus-visible { outline-color: #9b6a32; }
+
+@media (max-width: 800px) {
+  main:not(:has(.home-hero)) .page-width { width: calc(100% - 40px); }
+  main:not(:has(.home-hero)) :is(.section-padding,.soft-section) { padding-block: 26px; }
+  main:not(:has(.home-hero)) :is(.inner-hero,.compact-inner-hero,.chooser-hero) { padding-block: 28px 30px; }
+  main:not(:has(.home-hero)) h1 { font-size: clamp(32px, 8vw, 44px); }
+  main:not(:has(.home-hero)) h2 { font-size: 30px; }
+  main:not(:has(.home-hero)) :is(.inner-hero p,.section-lead,.recognition-list p,.request-choice-row p,.migrated-copy-text p,.about-page-grid p,.about-where p) { font-size: 16px; }
+  main:not(:has(.home-hero)) :is(.inner-hero-grid,.recognition-grid,.work-grid,.offer-card,.two-column-copy,.about-requests-layout,.about-where,.migrated-copy-layout,.migrated-split-grid,.migrated-videos-heading,.split-intro,.page-cta-inner,.about-page-grid) { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  main:not(:has(.home-hero)) .about-page-grid > div { grid-column: 1; grid-row: auto; }
+  main:not(:has(.home-hero)) .about-page-grid > div:not(.about-page-portrait) { grid-column: 1; grid-row: 1; }
+  main:not(:has(.home-hero)) .about-page-portrait { grid-column: 1; grid-row: 2; }
+  main:not(:has(.home-hero)) .request-choice-row { grid-template-columns: 28px minmax(0,1fr) 20px; gap: 12px; padding-block: 20px; }
+  main:not(:has(.home-hero)) .request-choice-row h2 { font-size: 22px; }
+  main:not(:has(.home-hero)) :is(.method-detail-list h2,.certificates-summary-copy strong) { font-size: 24px; }
+  main:not(:has(.home-hero)) .review-card { padding: 22px 20px; }
+  main:not(:has(.home-hero)) .review-card blockquote { font-size: 16px; }
+  main:not(:has(.home-hero)) .page-cta-inner .hero-actions { margin-top: 0; }
+  main:not(:has(.home-hero)) .page-cta-inner .button { width: 100%; justify-content: center; }
+}
+@media print {
+  .legal-document main { width: 100%; margin: 0; }
+  .legal-document a { color: #2f2923; }
+}
+
+/* Game catalogue has a full text CTA, unlike the price list's small arrow. */
+main:not(:has(.home-hero)) .pricing-list:has(.pricing-main) article {
+  grid-template-columns: 44px minmax(0,1fr) minmax(130px,180px);
+  align-items: start;
+  gap: 16px;
+  padding-block: 24px;
+}
+main:not(:has(.home-hero)) .pricing-list:has(.pricing-main) article > span { padding-top: 4px; }
+main:not(:has(.home-hero)) .pricing-list:has(.pricing-main) article > a {
+  grid-area: auto;
+  grid-column: 3;
+  max-width: 100%;
+  width: fit-content;
+  justify-self: end;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  main:not(:has(.home-hero)) .pricing-list:has(.pricing-main) article {
+    grid-template-columns: 28px minmax(0,1fr);
+    gap: 12px;
+    padding-block: 20px;
+  }
+  main:not(:has(.home-hero)) .pricing-list:has(.pricing-main) article > a {
+    grid-area: auto;
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+main:not(:has(.home-hero)) .about-timeline article > div { min-width: 0; }
+@media (max-width: 800px) {
+  main:not(:has(.home-hero)) .about-timeline article {
+    grid-template-columns: minmax(0,1fr);
+    gap: 10px;
+  }
+}
+
+
+/*
+ * Yulia OzdeMir — games in the approved warm editorial / amber system.
+ * Append AFTER existing page CSS and site-spacing-ef33c97a.css.
+ * Scope: .chess-page, .health-page, .game-detail-section only.
+ * No assets, copy, routes, fields, consent logic or player geometry changed.
+ * .game-detail-section is caller-specified; not present in the inspected source.
+ */
+
+:is(.chess-page, .health-page, .game-detail-section) {
+  --game-paper: #fbf8f1;
+  --game-ink: #2f2923;
+  --game-text: #514941;
+  --game-muted: #817365;
+  --game-accent: #9b6a32;
+  --game-hover: #805523;
+  --game-line: #d9c7ae;
+  --game-soft: #f0e6d7;
+  --game-band: rgba(240, 230, 215, .32);
+  --game-gap: 40px;
+  --game-section-space: 36px;
+
+  /* Existing chess classes are also reused by the health page. */
+  --chess-paper: var(--game-paper);
+  --chess-sand: var(--game-band);
+  --chess-ink: var(--game-ink);
+  --chess-green: var(--game-accent);
+  --chess-gold: var(--game-accent);
+  --chess-muted: var(--game-muted);
+  --chess-line: var(--game-line);
+
+  color: var(--game-text);
+  background-color: var(--game-paper);
+  background-image: none;
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-container, .health-container) {
+  width: min(1120px, calc(100% - 56px));
+  margin-inline: auto;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(h1, h2, h3) {
+  color: var(--game-ink);
+  font-family: Prata, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: .005em;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) h1 {
+  margin: 0 0 24px;
+  font-size: clamp(40px, 4.5vw, 60px);
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) h2 {
+  margin: 0 0 22px;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) h3 {
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--game-accent);
+  outline-offset: 4px;
+}
+
+/* Shared hero proportions; photos keep their existing individual maximums. */
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero, .health-hero) {
+  min-height: 0;
+  margin: 0;
+  padding: 36px 0 40px;
+  background-color: var(--game-band);
+  background-image: none;
+  box-shadow: none;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero, .health-hero)::before,
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero, .health-hero)::after {
+  content: none;
+  background: none;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-grid, .health-hero-grid) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: var(--game-gap);
+  align-items: center;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-grid, .health-hero-grid, .chess-about-grid, .health-about-grid, .health-results-grid) > * {
+  min-width: 0;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-back, .health-back) {
+  margin-bottom: 20px;
+  color: var(--game-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-back, .health-back):hover {
+  color: var(--game-hover);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-eyebrow, .health-eyebrow) {
+  margin-bottom: 14px;
+  color: var(--game-accent);
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .16em;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-subtitle {
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+/* Natural image ratios, no clipping, cover treatment, filters or new artwork. */
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-photo, .health-hero-photo, .health-detail-photo) {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  overflow: visible;
+  align-self: center;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-photo, .health-hero-photo, .health-detail-photo) img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-intro, .chess-about-copy, .health-lead, .health-about-copy, .health-results-list, .health-closing) {
+  color: var(--game-text);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-intro, .chess-about-copy, .health-about-copy) p + p {
+  margin-top: 16px;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-booking, .health-hero-booking) {
+  margin-top: 24px;
+}
+
+/* Compact section rhythm; no viewport-sized or decorative empty bands. */
+.game-detail-section {
+  min-height: 0;
+  padding-block: var(--game-section-space);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-about, .chess-formats, .health-about, .health-process, .health-results, .health-videos, .health-formats) {
+  padding-block: var(--game-section-space);
+  background-image: none;
+  box-shadow: none;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-about, .chess-formats, .health-about, .health-results, .health-videos) {
+  background-color: var(--game-paper);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.health-process, .health-formats) {
+  background-color: var(--game-band);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-about-grid, .health-about-grid, .health-results-grid) {
+  gap: var(--game-gap);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-process-grid {
+  gap: 24px var(--game-gap);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-process-step p {
+  color: var(--game-text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-format {
+  padding: 22px 40px 22px 0;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-format + .chess-format {
+  padding: 22px 0 22px 40px;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-format-description {
+  color: var(--game-text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-price {
+  margin-top: 20px;
+  color: var(--game-ink);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-about-copy h3 {
+  margin-top: 24px;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-final-booking, .health-final-booking) {
+  margin-top: 26px;
+  gap: 24px;
+}
+
+/* Reuse existing contact buttons only. Native disabled colors remain intact. */
+:is(.chess-page, .health-page, .game-detail-section) .chess-contact-links {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button {
+  min-height: 48px;
+  border-radius: 0;
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: none;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button-solid {
+  color: var(--game-paper);
+  background: var(--game-accent);
+  border-color: var(--game-accent);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button-outline {
+  color: var(--game-accent);
+  background: transparent;
+  border-color: var(--game-accent);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button-solid:not(:disabled):not([aria-disabled='true']):hover {
+  color: var(--game-paper);
+  background: var(--game-hover);
+  border-color: var(--game-hover);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button-outline:not(:disabled):not([aria-disabled='true']):hover {
+  color: var(--game-hover);
+  background: var(--game-soft);
+  border-color: var(--game-hover);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-button:disabled {
+  color: #697c7f;
+  background: #e5e7e3;
+  border-color: #b5bebb;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Checkbox appearance, dimensions, checked state and gating stay in original CSS/JS. */
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-consent-label a, .chess-legal a) {
+  color: var(--game-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) :is(.chess-consent-label a, .chess-legal a):hover {
+  color: var(--game-hover);
+}
+
+/* Legal copy is untouched; deliberately smaller than marketing headings. */
+:is(.chess-page, .health-page, .game-detail-section) .chess-legal {
+  padding-block: 28px;
+  background-color: var(--game-band);
+  background-image: none;
+  border-top: 1px solid var(--game-line);
+}
+
+.health-page .chess-legal {
+  background-color: var(--game-paper);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-legal h2 {
+  margin-bottom: 18px;
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .chess-legal-copy {
+  color: var(--game-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Card copy only: video grid/media/video/controls/overlays remain unmodified. */
+:is(.chess-page, .health-page, .game-detail-section) .health-videos .migrated-video-card {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-videos .migrated-video-copy .eyebrow {
+  color: var(--game-accent);
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-videos .migrated-video-copy h3 {
+  color: var(--game-ink);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+:is(.chess-page, .health-page, .game-detail-section) .health-videos .migrated-video-copy p {
+  color: var(--game-muted);
+}
+
+/* Align the compact stacked layout with the approved homepage's 800px cutoff. */
+@media (max-width: 800px) {
+  :is(.chess-page, .health-page, .game-detail-section) {
+    --game-gap: 24px;
+    --game-section-space: 26px;
+    font-size: 16px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-container, .health-container) {
+    width: calc(100% - 40px);
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) h1 {
+    margin-bottom: 20px;
+    font-size: clamp(32px, 8.5vw, 44px);
+    line-height: 1.2;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) h2 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) h3 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero, .health-hero) {
+    padding: 24px 0 28px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-grid, .health-hero-grid, .chess-about-grid, .health-about-grid, .health-results-grid) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--game-gap);
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-hero-copy {
+    max-width: none;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-hero-photo, .health-hero-photo, .health-detail-photo) {
+    justify-self: center;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .health-about-copy {
+    grid-row: 1;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .health-results h2 {
+    max-width: none;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-back, .health-back) {
+    margin-bottom: 16px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-eyebrow, .health-eyebrow) {
+    font-size: 10px;
+    letter-spacing: .12em;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .health-subtitle {
+    font-size: 23px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-intro, .chess-about-copy, .health-lead, .health-about-copy, .health-results-list, .health-closing) {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-format-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-format,
+  :is(.chess-page, .health-page, .game-detail-section) .chess-format + .chess-format {
+    padding: 20px 0;
+    border-left: 0;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-format + .chess-format {
+    border-top: 1px solid var(--game-line);
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .health-process-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) :is(.chess-final-booking, .health-final-booking) {
+    margin-top: 22px;
+    gap: 18px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-button {
+    min-height: 48px;
+    font-size: 13px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-legal {
+    padding-block: 24px;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .chess-legal h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  :is(.chess-page, .health-page, .game-detail-section) .health-videos .migrated-video-copy h3 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.chess-page, .health-page, .game-detail-section) .chess-button {
+    transition: none;
+  }
+}
+
+/* The exact approved testimonial refractions, including game video sections. */
+main:not(:has(.home-hero)) .health-videos {
+ background-color: #fbf8f1;
+ background-image: url('./amber-reviews-approved-ee48f86faf.webp');
+ background-position: center top; background-size: 100% auto; background-repeat: repeat-y;
+}
