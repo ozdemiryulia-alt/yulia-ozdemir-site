@@ -1,0 +1,47 @@
+/* Inner pages share the approved home art, without altering copy or page order. */
+body:has(main):not(:has(.home-hero)){background:#f8eedf}
+body main:not(:has(.home-hero)){background:#f8eedf;--game-paper:#f8eedf;--chess-paper:#f8eedf;--chess-sand:#f1e6d4;color:#233b35}
+body:has(main):not(:has(.home-hero)) .site-header{background:#f8f0e4;border:0}
+body:has(main):not(:has(.home-hero)) .header-inner{min-height:76px;width:calc(100% - 96px);max-width:none}
+body:has(main):not(:has(.home-hero)) .brand-mark,body:has(main):not(:has(.home-hero)) .brand-copy small{display:none}
+body:has(main):not(:has(.home-hero)) .brand-copy strong{font:400 32px/1 'Cormorant Garamond',serif}
+body:has(main):not(:has(.home-hero)) .site-header nav a{font-size:14px}
+body:has(main):not(:has(.home-hero)) .site-header nav a:last-child{border-radius:28px}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){position:relative;isolation:isolate;min-height:400px;padding:75px 0 125px;border:0;background:#032c30 url('./approved-bottom-plate.png') center top/100% auto no-repeat}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero):after{content:"";position:absolute;inset:auto 0 -1px;height:110px;background:linear-gradient(180deg,transparent,#f8eedf);pointer-events:none;z-index:0}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero)>*{position:relative;z-index:1}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero) h1{font:400 clamp(44px,5.5vw,82px)/1.06 'Cormorant Garamond',serif;letter-spacing:-.035em;color:#fff1d9;max-width:1120px;text-wrap:balance;margin-bottom:25px}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero) :is(p,li,.section-lead,.chess-intro,.health-lead,.health-subtitle){font-size:18px;line-height:1.75;color:#fff2dc}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero) :is(.eyebrow,.chess-eyebrow,.health-eyebrow){font-size:12px;letter-spacing:.24em;color:#ecca86;margin-bottom:20px}
+body main:not(:has(.home-hero)) .site-amber-picture{padding:0 0 35px;background:#f8eedf}
+body main:not(:has(.home-hero)) .site-amber-picture figure{border:0;box-shadow:none;overflow:hidden;mask-image:linear-gradient(180deg,transparent,#000 9%,#000 86%,transparent)}
+body main:not(:has(.home-hero)) .site-amber-picture figure:after{display:none}
+body main:not(:has(.home-hero)) :is(h2,h3){font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:-.02em}
+body main:not(:has(.home-hero)) h2{font-size:clamp(34px,3.7vw,52px);line-height:1.15}
+body main:not(:has(.home-hero)) h3{font-size:clamp(27px,2.6vw,36px);line-height:1.2}
+body main:not(:has(.home-hero)) :is(.section-padding,.soft-section){background-color:transparent}
+body main:not(:has(.home-hero)) .soft-section{background:linear-gradient(180deg,#f8eedf,#f2e5d2 45%,#f8eedf)}
+body main:not(:has(.home-hero)) :is(.request-choice-row,.direction-card,.pricing-list article,.method-detail-list article,.education-grid article){border-color:#d8bc8e;box-shadow:none;border-radius:0}
+body main:not(:has(.home-hero)) :is(.button-primary,.chess-button-solid){background:linear-gradient(120deg,#eaa324,#ffdb75 53%,#df9a19);color:#17352e;border:1px solid #efc269;border-radius:7px;box-shadow:inset 0 1px 3px #fff5cc66,0 8px 20px #86530c15;font:500 23px/1.2 'Cormorant Garamond',serif;padding:15px 26px;min-height:54px}
+body main:not(:has(.home-hero)) :is(.button-outline,.button-secondary,.chess-button-outline){border-radius:28px;font:500 22px/1.2 'Cormorant Garamond',serif;padding:14px 24px}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary){background:#043037 url('./amber-sea-water-20261114.png') center bottom/cover no-repeat;border:0;box-shadow:none;padding-top:60px;padding-bottom:60px}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary) :is(h2,h3){color:#fff1d9}
+body main:not(:has(.home-hero)) :is(.review-card,.migrated-video-card,.certificate-card,.legal-aside){background:#fbf4e8;border:1px solid #dec7a3}
+body main:not(:has(.home-hero)) .review-card{background:transparent;border:0;border-bottom:1px solid #d8bc8e;padding:28px 20px}
+body main:not(:has(.home-hero)) .review-card blockquote{font:italic 400 27px/1.35 'Cormorant Garamond',serif;color:#203a31}
+body main:not(:has(.home-hero)) :is(.request-reviews,.migrated-videos-section,.health-videos){background:#f8eedf;background-image:linear-gradient(#f8eedff0,#f8eedfe8),url('./approved-top-plate.png');background-position:center,bottom right;background-size:cover}
+body main:not(:has(.home-hero)) :is(input,textarea,select){font-size:16px;border-color:#c7ae85;background:#fffaf1}
+body main:not(:has(.home-hero)) .faq-list details[open]{background:#f0e4d1}
+@media(max-width:800px){
+body:has(main):not(:has(.home-hero)) .header-inner{width:calc(100% - 36px)}body:has(main):not(:has(.home-hero)) .brand-copy strong{font-size:25px}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){min-height:0;padding:40px 0 95px;background-image:linear-gradient(#032c3070,#032c3060),url('./amber-sea-water-20261114.png');background-size:cover;background-position:center}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero):after{height:75px}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero) h1{font-size:clamp(37px,9.8vw,55px);line-height:1.08;overflow-wrap:break-word}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero) :is(p,li,.section-lead,.chess-intro,.health-lead){font-size:17px;line-height:1.7}
+body main:not(:has(.home-hero)) h2{font-size:35px}body main:not(:has(.home-hero)) h3{font-size:29px}
+body main:not(:has(.home-hero)) :is(.button-primary,.button-outline,.button-secondary,.chess-button-solid,.chess-button-outline){font-size:22px;white-space:normal;text-align:center;padding:14px 20px}
+body main:not(:has(.home-hero)) .review-card blockquote{font-size:25px}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary){padding:38px 22px}
+}
+body:has(main):not(:has(.home-hero)) .site-header .brand-mark,body:has(main):not(:has(.home-hero)) .site-header .brand-copy small{display:none!important}body:has(main):not(:has(.home-hero)) .site-header .brand-copy strong{font:400 32px/1 "Cormorant Garamond",serif!important}body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){background-image:linear-gradient(180deg,#032c3010 0%,#032c3010 30%,#032c30d9 100%),url("./approved-bottom-plate.png")}@media(max-width:800px){body:has(main):not(:has(.home-hero)) .site-header .brand-copy strong{font-size:25px!important}body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){background-image:linear-gradient(#032c3070,#032c3060),url("./amber-sea-water-20261114.png")}}
+body main:not(:has(.home-hero)) :is(.health-hero,.chess-hero){background-image:linear-gradient(#032c3040,#032c3070),url("./amber-sea-water-20261114.png");background-size:cover;background-position:center bottom}body main:not(:has(.home-hero)) :is(.health-hero,.chess-hero) label a{color:#f1cf92}
