@@ -1,0 +1,128 @@
+/* The approved plates define composition; typography remains selectable HTML. */
+body:has(.approved-top){background:#f8eedf}
+body:has(.approved-top) .site-header{background:#f8f0e4;border:0;height:76px}
+body:has(.approved-top) .header-inner{width:calc(100% - 96px);max-width:none;min-height:76px}
+body:has(.approved-top) .brand-mark,body:has(.approved-top) .brand-copy>span{display:none}
+body:has(.approved-top) .brand-copy strong{font:400 32px/1 'Cormorant Garamond',serif}
+body .approved-top{position:relative;background:#f8eedf url('./approved-top-plate.png') center calc(-100vw * 76 / 1122)/100% auto no-repeat}
+body .approved-top .home-hero.hero-section{background:none!important;padding:6.3vw 0 0;min-height:72.5vw;display:block;overflow:visible}
+body .approved-top .home-hero:before,body .approved-top .home-hero:after{display:none}
+body .approved-top .home-hero .hero-content{width:90%;max-width:none;margin:auto}
+body .approved-top .home-hero .eyebrow{font-size:12px;letter-spacing:.32em;margin:0 0 12px;max-width:62%}
+body .approved-top .home-hero h1{margin:0 0 24px;max-width:none!important}
+body .approved-top .home-hero h1>span:first-child{font:400 4.1vw/1.05 'Cormorant Garamond',serif;margin:0 0 24px}
+body .approved-top .home-hero h1 .home-hero-tagline{font:400 11.8vw/.69 'Cormorant Garamond',serif!important;letter-spacing:-.055em;max-width:62vw;white-space:normal!important;color:#fff1d5!important;-webkit-text-fill-color:unset!important;text-shadow:none}
+body .approved-top .home-hero h1 .site-keyphrase{font:inherit!important;line-height:inherit!important;display:block;background:linear-gradient(145deg,#fff6df 20%,#fff1d4 68%,#eeb04f);background-clip:text;-webkit-text-fill-color:transparent!important}
+body .approved-top .home-hero .hero-reference-subtitle{font:400 21px/1.4 'Cormorant Garamond',serif;max-width:64%;margin:32px 0;color:#fff1db}
+body .hero-reference-actions{display:flex;align-items:center;gap:38px;flex-wrap:wrap}
+body .reference-gold-button{display:inline-flex;padding:17px 30px;border:1px solid #f9ce70;border-radius:7px;background:linear-gradient(120deg,#eaa324,#ffdb75 53%,#df9a19);box-shadow:inset 0 1px 4px #fff6c980,0 8px 22px #81500925;color:#132b27;font:500 24px/1.15 'Cormorant Garamond',serif;text-decoration:none}
+body .reference-text-link{font:400 23px/1.4 'Cormorant Garamond',serif;color:#fff1db;border-bottom:1px solid #dfc794;padding-bottom:6px}
+body .hero-full-story{position:relative;z-index:2;max-width:620px;margin-top:24px;color:#fff1db;font:400 16px/1.7 Manrope,sans-serif}
+body .hero-full-story summary{cursor:pointer;font:400 19px/1.4 'Cormorant Garamond',serif;color:#e1c794}
+body .hero-full-story[open]{background:#062d32f2;padding:16px 22px;border:1px solid #a48144;border-radius:5px}
+body .hero-full-story p{margin:12px 0 0}
+body .approved-top .home-paths{background:none;padding:0 0 35px;min-height:45.5vw}
+body .approved-top .home-paths>.page-width{width:90%;max-width:none;margin:auto}
+body .approved-top .home-paths .eyebrow{display:none}
+body .approved-top .home-paths h2{font:400 5.5vw/1.1 'Cormorant Garamond',serif;margin:0 0 45px 30%;color:#112d29;letter-spacing:-.025em}
+body .approved-top .home-paths h2:after{content:"";display:block;width:150px;height:2px;margin:18px auto 0;background:linear-gradient(90deg,transparent,#b87818,transparent)}
+body .approved-top .home-paths-layout{display:block!important}
+body .approved-top .home-paths-photo{display:none!important}
+body .approved-top .path-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:70%;margin-left:30%}
+body .approved-top .path-row,body .approved-top .path-row:first-child{display:flex;flex-direction:column;gap:16px;border:0;border-left:1px solid #d8bd92;padding:0 0 0 22px;width:auto;height:auto;background:none}
+body .approved-top .path-row:first-child{border-left:0;padding-left:0}
+body .approved-top .path-row>span:first-child{font:400 26px/1 'Cormorant Garamond',serif;color:#a26717}
+body .approved-top .path-row h3{font:400 3.8vw/1 'Cormorant Garamond',serif;letter-spacing:-.025em;margin:0 0 24px;color:#142b25}
+body .path-full-copy{font:400 15px/1.65 Manrope,sans-serif}
+body .path-full-copy summary{cursor:pointer;list-style:none}
+body .path-full-copy summary:after{content:' +';color:#97621b}
+body .path-full-copy[open] summary:after{content:' −'}
+body .path-full-copy p{margin-top:12px}
+body .approved-top .path-row .inline-link{font-size:12px;line-height:1.6;margin-top:18px;color:#91621c}
+body .approved-top .path-row>svg{color:#a56c19;margin-top:15px}
+body .approved-bottom{position:relative;isolation:isolate;background:#f8eedf}
+body .approved-bottom:before{content:"";position:absolute;z-index:-1;top:0;left:0;width:100%;height:115.5vw;background:url('./approved-bottom-plate.png') center top/100% auto no-repeat;pointer-events:none}
+body .approved-bottom .about-session-group{background:none}
+body .approved-bottom .home-about,body .approved-bottom .home-contact,body .approved-bottom .home-reviews{background:none!important}
+body .approved-bottom .home-about:before,body .approved-bottom .home-about:after,body .approved-bottom .home-contact:before,body .approved-bottom .home-contact:after,body .approved-bottom .home-reviews:before,body .approved-bottom .home-reviews:after{display:none!important}
+body .approved-bottom .home-about{min-height:44.5vw;padding:4vw 0 3vw;box-sizing:border-box}
+body .approved-bottom .home-about-layout{width:90%;max-width:none;display:grid;grid-template-columns:34% 60%;gap:6%;align-items:start}
+body .approved-bottom .home-about-photo{height:35vw;width:100%;max-width:none;grid-column:1;grid-row:1;margin:0;mask-image:radial-gradient(ellipse 65% 70% at 50% 42%,#000 55%,transparent 91%)}
+body .approved-bottom .home-about-photo img{height:100%;width:100%;object-fit:cover;object-position:center 27%;mask-image:none}
+body .approved-bottom .home-about-copy{grid-column:2;grid-row:1;padding-top:1vw}
+body .approved-bottom .home-about .eyebrow{font-size:12px;letter-spacing:.4em;margin-bottom:12px;color:#f3cf8b}
+body .approved-bottom .home-about h2{font:400 5.6vw/1.1 'Cormorant Garamond',serif;margin:0 0 24px;color:#fff1da}
+body .approved-bottom .home-about p{font:400 clamp(20px,2vw,28px)/1.35 'Cormorant Garamond',serif;color:#fff1da;margin:0 0 22px}
+body .approved-bottom .home-about .inline-link{font:400 25px/1.2 'Cormorant Garamond',serif;color:#e9bd64}
+body .approved-bottom .home-contact{padding:3vw 0 2vw;min-height:35vw}
+body .approved-bottom .home-contact-layout{width:90%;max-width:none}
+body .approved-bottom .home-session-copy{width:64%}
+body .approved-bottom .home-session-copy>.eyebrow{display:none}
+body .approved-bottom .home-contact h2{font:400 5.3vw/1.1 'Cormorant Garamond',serif;color:#16332c;margin:0 0 22px}
+body .approved-bottom .home-contact h2:after{content:"";display:block;width:140px;height:2px;margin-top:18px;background:linear-gradient(90deg,#ad6b18,transparent)}
+body .approved-bottom .home-session-copy p{font:400 23px/1.35 'Cormorant Garamond',serif;margin:0 0 16px;color:#26382f}
+body .approved-bottom .home-session-details{width:64%;margin-top:20px;gap:23px 24px;grid-template-columns:auto 1fr}
+body .approved-bottom .home-session-meta{display:flex;flex-wrap:wrap;gap:12px 22px;font:400 22px/1.4 'Cormorant Garamond',serif!important}
+body .approved-bottom .home-session-meta br{display:none}
+body .approved-bottom .home-session-meta span+span{border-left:1px solid #d9bb85;padding-left:22px}
+body .approved-bottom .home-session-price{font:500 56px/1 'Cormorant Garamond',serif!important}
+body .approved-bottom .home-session-primary{padding:16px 25px!important;border-radius:8px!important;font:500 24px/1.2 'Cormorant Garamond',serif!important}
+body .approved-bottom .home-session-messengers a{font:400 20px/1.3 'Cormorant Garamond',serif!important}
+body .approved-bottom .home-reviews{padding:35px 0 60px;min-height:380px}
+body .approved-bottom .home-reviews>.page-width{width:90%;max-width:none}
+body .approved-bottom .home-reviews h2{font:400 5.3vw/1 'Cormorant Garamond',serif;color:#16332c;margin:0 0 35px}
+body .approved-bottom .home-reviews h2:before{content:'ОТЗЫВЫ';display:block;font:600 11px/1.4 Manrope,sans-serif;letter-spacing:.45em;color:#a06c23;margin-bottom:15px}
+body .approved-bottom .review-filters[hidden]{display:none!important}
+body .approved-bottom .review-grid{gap:36px}
+body .approved-bottom .review-card{border:0;padding:0;height:auto}
+body .approved-bottom .review-grid>.scroll-reveal:nth-child(even) .review-card{padding-left:32px}
+body .approved-bottom .review-card blockquote{font:italic 400 29px/1.18 'Cormorant Garamond',serif;color:#1d3028;margin:0 0 18px}
+body .approved-bottom .home-reviews:not(.reviews-expanded) .review-topic,body .approved-bottom .home-reviews:not(.reviews-expanded) .review-source-link{display:none}
+body .approved-bottom .review-card footer{margin:0}
+body .approved-bottom .review-card footer :is(strong,span){font:400 19px/1.3 'Cormorant Garamond',serif}
+body .reference-all-reviews{border:1px solid #244944;background:transparent;color:#163630;border-radius:30px;padding:10px 28px;font:500 22px/1.2 'Cormorant Garamond',serif;margin-top:30px;cursor:pointer}
+body .approved-bottom .home-reviews-booking{display:none}
+body:has(.approved-top) .site-footer{background:#052a2e url('./approved-bottom-plate.png') center bottom/100% auto no-repeat;padding:32px 0 20px}
+body .approved-bottom .reviews-expanded{background:#f8eedfe8!important}
+@media(max-width:700px){
+body:has(.approved-top) .header-inner{width:calc(100% - 36px)}body:has(.approved-top) .brand-copy strong{font-size:25px}
+body .approved-top{background-size:auto 1120px;background-position:68% -61px}
+body .approved-top .home-hero.hero-section{min-height:780px;padding-top:38px}
+body .approved-top .home-hero .hero-content{width:calc(100% - 36px)}
+body .approved-top .home-hero .eyebrow{max-width:95%;font-size:10px;letter-spacing:.22em}
+body .approved-top .home-hero h1>span:first-child{font-size:34px;margin-bottom:27px}
+body .approved-top .home-hero h1 .home-hero-tagline{font-size:16vw!important;max-width:100%;line-height:.85!important;letter-spacing:-.06em}
+body .approved-top .home-hero .hero-reference-subtitle{max-width:100%;font-size:20px;margin:28px 0}
+body .hero-reference-actions{gap:20px}.reference-gold-button{font-size:23px!important;padding:16px 22px!important}.reference-text-link{font-size:21px!important}
+body .hero-full-story{font-size:16px;margin-top:20px}body .hero-full-story summary{font-size:20px}
+body .approved-top .home-paths{background:#f8eedf;padding:28px 0 45px;min-height:0}
+body .approved-top .home-paths h2{font-size:43px;margin:0 0 28px}body .approved-top .home-paths h2:after{margin-left:0}
+body .approved-top .path-list{grid-template-columns:1fr;width:100%;margin:0;gap:28px}
+body .approved-top .path-row,body .approved-top .path-row:first-child{border:0;border-top:1px solid #d8bd92;padding:22px 0 0;gap:10px}
+body .approved-top .path-row h3{font-size:36px;margin-bottom:16px}body .approved-top .path-row .inline-link{font-size:15px}
+body .path-full-copy{font-size:16px}body .approved-top .home-paths-photo{display:block!important;width:100%!important;margin:0 0 24px!important;height:300px;min-height:0;mask-image:linear-gradient(#000 80%,transparent)}
+body .approved-bottom:before{display:none}body .approved-bottom .home-about{background:#032a2e url('./approved-bottom-plate.png') center top/auto 1200px no-repeat!important;padding:28px 0 80px;position:relative}
+body .approved-bottom .home-about:after{display:block!important;content:'';position:absolute;inset:auto 0 -1px;height:90px;background:linear-gradient(transparent,#f8eedf)}
+body .approved-bottom .home-about-layout{display:flex;flex-direction:column;gap:20px;width:90%}
+body .approved-bottom .home-about-photo{height:380px;width:100%;max-width:360px;margin:auto;order:0;mask-image:radial-gradient(ellipse 70% 70% at 50% 42%,#000 55%,transparent 94%)}
+body .approved-bottom .home-about-copy{order:1}body .approved-bottom .home-about h2{font-size:45px}body .approved-bottom .home-about p{font-size:23px}
+body .approved-bottom .home-contact{padding:25px 0 260px;background:url('./approved-bottom-plate.png') 70% 48%/auto 900px no-repeat!important}
+body .approved-bottom .home-session-copy,body .approved-bottom .home-session-details{width:100%}body .approved-bottom .home-contact h2{font-size:43px}body .approved-bottom .home-session-copy p{font-size:22px}
+body .approved-bottom .home-session-details{grid-template-columns:1fr}body .approved-bottom .home-session-meta{flex-direction:column;gap:8px}body .approved-bottom .home-session-meta span+span{border:0;padding:0}
+body .approved-bottom .home-reviews{padding:25px 0 45px;background:#f8eedf!important}body .approved-bottom .home-reviews h2{font-size:43px}body .approved-bottom .review-grid{grid-template-columns:1fr;gap:28px}body .approved-bottom .review-grid>.scroll-reveal:nth-child(even) .review-card{padding-left:0;border:0}body .approved-bottom .review-card blockquote{font-size:27px;line-height:1.25}
+}
+
+body:has(.approved-top) .brand-copy small{display:none}
+body .approved-top .path-row,body .approved-top .path-row:first-child{border-top:0!important;border-bottom:0!important}
+body .approved-bottom .scroll-reveal{opacity:1!important;transform:none!important;animation:none!important}
+body .approved-bottom .home-reviews{min-height:0;padding-bottom:45px}
+body .approved-bottom .home-reviews-heading{margin-bottom:0}
+body .approved-bottom .home-reviews h2{margin-bottom:30px}
+body:has(.approved-top) .site-footer{background:#052a2e url('./amber-sea-water-20261114.png') center bottom/cover no-repeat}
+body .approved-bottom:before{mask-image:linear-gradient(#000 90%,transparent 100%)}
+body .approved-top:has(.path-full-copy[open]){background-size:100% auto}
+@media(min-width:701px){body .approved-top .home-paths{padding-bottom:20px}body .approved-top .path-row .inline-link{display:none}body .approved-top .path-row:has(details[open]) .inline-link{display:inline-block}body .approved-top .path-full-copy summary{font-size:15px;line-height:1.65}body .approved-top .path-row>svg{margin-top:10px}}
+body .approved-bottom .home-about-photo{mask-image:linear-gradient(180deg,transparent 0%,#000 12%,#000 78%,transparent 100%)}body .approved-bottom .home-about-photo img{height:120%;transform:translateY(-7%);object-position:center 42%;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 80%,transparent)}body:has(.approved-top) .site-header nav a{font-size:14px}body:has(.approved-top) .site-header nav a:last-child{border-radius:28px}@media(max-width:700px){body .approved-bottom .home-about-photo img{height:110%;transform:translateY(-5%)}}
+@media(max-width:700px){body .approved-top{background-image:linear-gradient(180deg,#032a2ec9 0px,#032a2e99 480px,transparent 710px),url("./approved-top-plate.png");background-size:100% 100%,auto 1120px;background-position:center,68% -61px}body .approved-top .home-hero .hero-reference-subtitle{color:#fff3dc;text-shadow:0 1px 8px #00262d}body .approved-top .hero-reference-actions a{position:relative;z-index:1}}
+body .approved-top .path-arrow{color:#a56c19;display:inline-flex;margin-top:12px}body .approved-top details summary:focus-visible,body .reference-all-reviews:focus-visible{outline:2px solid #b17b25;outline-offset:5px}
+@media(max-width:700px){body .approved-bottom .home-about{background:#032a2e url("./amber-sea-water-20261114.png") center bottom/cover no-repeat!important}body .approved-bottom .home-contact{background:#f8eedf!important;position:relative;isolation:isolate}body .approved-bottom .home-contact:before{display:block!important;content:"";position:absolute;inset:auto 0 0;height:250px;background:url("./approved-bottom-plate.png") 70% -260px/auto 700px no-repeat;mask-image:linear-gradient(transparent,#000 20%,#000 75%,transparent);z-index:0}body .approved-bottom .home-contact-layout{position:relative;z-index:1}}
