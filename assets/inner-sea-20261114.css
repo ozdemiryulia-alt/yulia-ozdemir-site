@@ -1,0 +1,44 @@
+/* Shared marine and amber art direction for existing inner pages. Content/layout order unchanged. */
+body main:not(:has(.home-hero)){background:#fbf5e9;color:#22423f;--site-emphasis:#a67935;--game-paper:#fbf5e9;--game-ink:#173f42;--game-muted:#49615b;--game-line:#dbcaab}
+body main:not(:has(.home-hero)) :is(h1,h2,h3){color:#123c40;font-weight:400}
+body main:not(:has(.home-hero)) :is(.section-padding,.soft-section){padding-top:55px;padding-bottom:55px}
+body main:not(:has(.home-hero)) .soft-section{background:#f2eadc}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){position:relative;isolation:isolate;background:#063039 url('./amber-sea-water-20261114.png') center bottom/cover no-repeat;padding-top:64px;padding-bottom:72px;color:#fff1d9;border-bottom:1px solid #b58a45}
+body main:not(:has(.home-hero)) .inner-hero::before{content:none}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero) :is(h1,h2,h3){color:#fff1d9}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero) :is(p,li,.section-lead,.chess-intro,.health-lead,.health-subtitle){color:#f3eee2;font-size:17px;line-height:1.8;text-shadow:0 1px 10px #00212a}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero) :is(.eyebrow,.chess-eyebrow,.health-eyebrow,.chess-back,.health-back){color:#f1cc85}
+body main:not(:has(.home-hero)) .inner-hero h1{font-size:clamp(36px,4.6vw,62px);line-height:1.2}
+body main:not(:has(.home-hero)) .site-amber-picture{background:#fbf5e9;padding-top:32px;padding-bottom:40px}
+body main:not(:has(.home-hero)) .site-amber-picture figure{position:relative}
+body main:not(:has(.home-hero)) .site-amber-picture figure:after{content:"";position:absolute;inset:auto 0 0;height:55px;background:linear-gradient(transparent,#fbf5e9);pointer-events:none}
+body main:not(:has(.home-hero)) :is(.request-choice-row,.direction-card,.pricing-list article,.method-detail-list article,.education-grid article){border-color:#d7c5a3}
+body main:not(:has(.home-hero)) :is(.request-choice-row,.direction-card,.pricing-list article){transition:background .2s}
+body main:not(:has(.home-hero)) :is(.request-choice-row,.direction-card):hover{background:#f1e6d1}
+body main:not(:has(.home-hero)) :is(.inline-link,.quiet-link,.text-button,.method-links a,.review-source-link){color:#936519;border-color:#c5a567}
+body main:not(:has(.home-hero)) :is(.button-primary,.chess-button-solid){background:linear-gradient(130deg,#ffe39b,#efb849 50%,#c1841d);border:1px solid #d7a54d;color:#153c36;min-height:52px;border-radius:4px;box-shadow:0 8px 24px #aa76151a;font-size:15px}
+body main:not(:has(.home-hero)) :is(.button-primary,.chess-button-solid):hover{background:linear-gradient(130deg,#ffecc1,#f7cc72 50%,#cc8b24);color:#153c36;border-color:#d7a54d}
+body main:not(:has(.home-hero)) :is(.button-outline,.button-secondary,.chess-button-outline){background:transparent;color:#174b50;border:1px solid #7e9690;border-radius:4px;min-height:50px}
+body main:not(:has(.home-hero)) :is(.button-outline,.button-secondary,.chess-button-outline):hover{background:#ede2ce;color:#113d40}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero,.page-cta,.offer-section,.migrated-format-section,.booking-summary) :is(.button-outline,.button-secondary,.chess-button-outline){background:transparent;color:#ffedc8;border-color:#bea36c}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero,.page-cta,.offer-section,.migrated-format-section,.booking-summary) :is(.button-outline,.button-secondary,.chess-button-outline):hover{background:#ffedc8;color:#073039}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary){background:#07343c url('./amber-sea-water-20261114.png') center bottom/cover no-repeat;color:#fff0d9;border-color:#bea36c;--site-emphasis:#f1cc85}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary) :is(h2,h3,strong){color:#fff0d9}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary) :is(p,li,span,.offer-note){color:#f0e9db}
+body main:not(:has(.home-hero)) :is(.page-cta,.offer-section,.migrated-format-section,.booking-summary) .eyebrow{color:#efc781}
+body main:not(:has(.home-hero)) :is(.request-reviews,.migrated-videos-section,.health-videos){background-color:#fbf5e9;background-image:linear-gradient(#fbf5e9ed,#fbf5e9eb),url('./amber-reviews-approved-ee48f86faf.webp');background-size:cover}
+body main:not(:has(.home-hero)) :is(.review-card,.migrated-video-card,.certificate-card,.legal-aside){background:#fffbf3;border:1px solid #ddccaa;box-shadow:none;border-radius:0}
+body main:not(:has(.home-hero)) .review-card blockquote{color:#224945;font:400 17px/1.85 Manrope,Arial,sans-serif}
+body main:not(:has(.home-hero)) :is(.review-card,.migrated-video-card) footer{border-color:#dfceb1}
+body main:not(:has(.home-hero)) .migrated-video-card video{background:#073039}
+body main:not(:has(.home-hero)) :is(.faq-list details,.legal-list article){border-color:#d7c5a3}
+body main:not(:has(.home-hero)) :is(.faq-list details[open],.faq-list details:hover){background:#f0e7d8}
+body main:not(:has(.home-hero)) :is(input,textarea,select){font-size:16px;background:#fffcf5;color:#173f42;border-color:#b5bdae}
+body main:not(:has(.home-hero)) :is(a,button,input,textarea,select,summary):focus-visible{outline:3px solid #c79c4e;outline-offset:4px}
+body main:not(:has(.home-hero)) :is(.chess-page,.health-page){--chess-paper:#fbf5e9;--chess-sand:#f2eadc;--chess-ink:#123c40;--chess-green:#104a50;--chess-muted:#4a6966;--chess-gold:#a67c36;--chess-line:#dbcaab;background:#fbf5e9}
+body main:not(:has(.home-hero)) :is(.health-hero-disclaimer,.chess-booking-label,.health-hero-booking){color:#f3dfba}
+body .site-footer{background:#062e35 url('./amber-sea-water-20261114.png') center bottom/cover no-repeat;color:#f1e4cb;border-top:1px solid #ae8b4a}
+body .site-footer :is(p,a,strong,span){color:#e5e7d9}
+body .site-footer .footer-bottom{border-color:#ffffff25}
+@media(max-width:800px){body main:not(:has(.home-hero)) :is(.section-padding,.soft-section){padding-top:32px;padding-bottom:36px}body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){padding-top:40px;padding-bottom:50px;background-position:40% bottom}body main:not(:has(.home-hero)) .inner-hero h1{font-size:34px;line-height:1.3}body main:not(:has(.home-hero)) :is(.inner-hero,.chess-hero,.health-hero) :is(p,li,.section-lead,.chess-intro,.health-lead){font-size:16px;line-height:1.85}body main:not(:has(.home-hero)) .site-amber-picture{padding-top:20px;padding-bottom:25px}body main:not(:has(.home-hero)) :is(.button-primary,.button-outline,.button-secondary,.chess-button){font-size:14px;min-height:48px}body main:not(:has(.home-hero)) .review-card blockquote{font-size:17px}}
+body main:not(:has(.home-hero)) :is(.inner-hero,.chooser-hero,.chess-hero,.health-hero){background-image:linear-gradient(90deg,#032b33b8,#032b3355),url('./amber-sea-water-20261114.png')}
