@@ -1,0 +1,68 @@
+/* Approved amber + sea design. Scoped to the homepage; no content or behavior changes. */
+body:has(.home-hero){background:#fbf5e9}
+body .home-hero.hero-section{background-color:#062b30;background-image:linear-gradient(90deg,rgba(2,29,34,.35),transparent 80%),url('./amber-sea-hero-20261114.png');background-size:cover;background-position:center;min-height:880px;padding:65px 0 160px;align-items:flex-start}
+body .home-hero.hero-section:after{content:"";display:block;position:absolute;inset:auto 0 0;height:75px;background:linear-gradient(transparent,#fbf5e9);z-index:0;pointer-events:none}
+body .home-hero .hero-content{width:min(1280px,calc(100% - 112px))}
+body .home-hero .hero-content .eyebrow{color:#f0cf94;font-size:12px;letter-spacing:.2em;max-width:590px;margin:0 0 24px}
+body .home-hero h1{color:#fff4dc;max-width:700px!important;line-height:1.1;margin:0 0 30px;font-weight:400}
+body .home-hero h1>span:first-child{font:400 34px/1.25 Prata,Georgia,serif;color:#fff4dc;margin-bottom:24px}
+body .home-hero h1 .home-hero-tagline{font:400 clamp(60px,6.5vw,92px)/1.08 Prata,Georgia,serif!important;white-space:normal!important;max-width:710px;color:#ffe8b6;font-weight:400;letter-spacing:-.04em;text-shadow:0 2px 28px #001b25}
+body .home-hero .hero-content>p{font:400 17px/1.85 Manrope,Arial,sans-serif;color:#fff6e7;max-width:570px;margin:0;text-shadow:0 1px 12px #002a32}
+body .home-paths{background:#fbf5e9;padding:65px 0 90px}
+body .home-paths>.page-width,body .home-reviews>.page-width{width:min(1200px,calc(100% - 112px))}
+body .home-paths h2,body .home-reviews h2{font:400 clamp(36px,4vw,54px)/1.2 Prata,Georgia,serif;color:#103a3c;margin-bottom:42px}
+body .home-paths .eyebrow{color:#956721;letter-spacing:.2em}
+body .home-paths-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:55px;align-items:stretch}
+body .home-paths-photo{border-radius:0;overflow:hidden;max-height:none;min-height:520px;mask-image:linear-gradient(to right,#000 80%,transparent)}
+body .home-paths-photo img{height:100%;width:100%;object-fit:cover;object-position:center;border-radius:0}
+body .home-paths .path-row{padding:25px 0;background:transparent;border-color:#d9c8a7;gap:18px}
+body .home-paths .path-row h3{font:400 24px/1.5 Prata,Georgia,serif;color:#173b3c}
+body .home-paths .path-row p{font-size:16px;line-height:1.8;color:#475957}
+body .home-paths .path-row>span:first-child,body .home-paths .path-row .inline-link,body .home-paths .path-row>svg{color:#976619}
+body .home-paths .path-row:hover{background:#f3e9d5}
+body .about-session-group{padding:0;background:#fbf5e9}
+body .about-session-group .home-about{position:relative;margin:0;padding:80px 0 105px;background:#073039 url('./amber-sea-water-20261114.png') center bottom/cover no-repeat}
+body .about-session-group .home-about-layout{width:min(1200px,calc(100% - 112px));grid-template-columns:minmax(0,1fr) minmax(0,.78fr);gap:70px;align-items:center}
+body .about-session-group .home-about-copy{position:relative;z-index:1}
+body .about-session-group .home-about h2{font:400 52px/1.2 Prata,Georgia,serif;color:#fff2dc;margin-bottom:25px}
+body .about-session-group .home-about .eyebrow{color:#edc47b;letter-spacing:.2em}
+body .about-session-group .home-about p{color:#f2ede3;font-size:17px;line-height:1.9;text-shadow:0 1px 12px #00242b}
+body .about-session-group .home-about .inline-link{color:#f1c472;border-bottom:1px solid #9c7d44;padding-bottom:8px}
+body .about-session-group .home-about-photo{height:460px;min-height:0;border-radius:0;mask-image:linear-gradient(180deg,#000 85%,transparent);box-shadow:none}
+body .about-session-group .home-about-photo img{object-fit:cover;object-position:center 20%;border-radius:0}
+body .about-session-group .home-contact{padding:90px 0;background:linear-gradient(90deg,#fbf5e9 25%,#fbf5e9e8 65%,#fbf5e950),url('./amber-shore-desktop-38d7a6c06c.webp') right center/cover no-repeat}
+body .about-session-group .home-contact-layout{width:min(1200px,calc(100% - 112px));grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:85px;align-items:start}
+body .about-session-group .home-contact h2{color:#103a3c;font:400 48px/1.2 Prata,Georgia,serif}
+body .about-session-group .home-contact p{font-size:17px;color:#3c524f;line-height:1.8}
+body .about-session-group .home-contact .home-session-price{font:400 48px/1.2 Prata,Georgia,serif;color:#0b3537;margin:22px 0}
+body .about-session-group .home-contact .home-session-primary,body .home-reviews .button-primary{background:linear-gradient(130deg,#ffe398,#efba4f 45%,#bc7a14);color:#17332e;border:1px solid #e9bb68;border-radius:5px;box-shadow:0 8px 30px #c18a2420;min-height:56px;font-size:16px;font-weight:600;padding:17px 26px}
+body .about-session-group .home-contact .home-session-primary:hover,body .home-reviews .button-primary:hover{background:linear-gradient(130deg,#ffeab3,#f4c664 45%,#d18e22)}
+body .about-session-group .home-contact .home-session-messengers .inline-link{color:#17464a;font-size:15px}
+body .home-reviews{background:#fbf5e9;padding:65px 0 90px}
+body .home-reviews .review-filters{gap:10px;flex-wrap:wrap;margin-bottom:40px}
+body .home-reviews .review-filters button{color:#32524e;border:1px solid #cbbd9e;background:transparent;border-radius:30px;min-height:44px;font-size:14px;padding:10px 18px}
+body .home-reviews .review-filters button[aria-pressed="true"]{background:#103c42;color:#fff1d4;border-color:#103c42}
+body .home-reviews .review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;align-items:stretch}
+body .home-reviews .review-card{border:1px solid #e4d5b7;border-radius:0;background:linear-gradient(145deg,#fffcf5,#f6eddd);box-shadow:none;padding:28px;min-height:0;height:100%;color:#173c3e}
+body .home-reviews .review-card blockquote{font:400 18px/1.85 Manrope,Arial,sans-serif;color:#294542;overflow:visible;max-height:none;-webkit-line-clamp:unset;display:block}
+body .home-reviews .review-topic{font-size:11px;letter-spacing:.16em;color:#956721}
+body .home-reviews .review-quote-icon,body .home-reviews .review-video-icon{color:#ac7929}
+body .home-reviews .review-card footer{border-color:#ded1b7;padding-top:22px;margin-top:24px}
+body .home-reviews .review-card footer strong{font-size:15px;color:#153f41}
+body .home-reviews .review-card footer span{font-size:13px;line-height:1.7;color:#62706a}
+body .home-reviews .review-source-link{color:#80591e;font-size:14px}
+body .home-reviews .review-video-content strong{font:400 22px/1.5 Prata,Georgia,serif;color:#214544}
+body:has(.home-hero) .site-footer{background:#062e35 url('./amber-sea-water-20261114.png') center bottom/cover no-repeat;color:#f1e4cb;border-top:1px solid #ae8b4a}
+body:has(.home-hero) .site-footer :is(p,a,strong,span){color:#e5e7d9}
+body:has(.home-hero) .site-footer .footer-bottom{border-color:#ffffff25}
+body:has(.home-hero) a:focus-visible,body:has(.home-hero) button:focus-visible{outline:3px solid #bb872d;outline-offset:5px}
+@media(min-width:1500px){body .home-hero.hero-section{min-height:920px}}
+@media(max-width:1000px){body .home-hero .hero-content{width:calc(100% - 56px)}body .home-hero.hero-section{background-position:60% center}body .home-hero h1 .home-hero-tagline{font-size:70px!important;max-width:610px}body .home-hero .hero-content>p{max-width:520px}body .home-paths>.page-width,body .home-reviews>.page-width,body .about-session-group .home-about-layout,body .about-session-group .home-contact-layout{width:calc(100% - 56px)}body .home-paths-layout{gap:30px}body .about-session-group .home-about-layout{gap:35px}body .home-reviews .review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){body .home-hero.hero-section{min-height:0;padding:40px 0 320px;background-color:#052d33;background-image:linear-gradient(180deg,#052d33 0%,#052d33 46%,transparent 75%),url('./amber-sea-hero-20261114.png');background-size:100% 100%,auto 440px;background-position:center,72% bottom;background-repeat:no-repeat}body .home-hero .hero-content{width:calc(100% - 40px)}body .home-hero .hero-content .eyebrow{font-size:10px;line-height:1.8;margin-bottom:20px;max-width:300px}body .home-hero h1{margin-bottom:24px}body .home-hero h1>span:first-child{font-size:25px;margin-bottom:20px}body .home-hero h1 .home-hero-tagline{font-size:clamp(35px,10vw,60px)!important;line-height:1.16;letter-spacing:-.035em;max-width:100%}body .home-hero .hero-content>p{font-size:16px;line-height:1.85;max-width:none}body .home-paths,body .home-reviews{padding:40px 0 55px}body .home-paths>.page-width,body .home-reviews>.page-width,body .about-session-group .home-about-layout,body .about-session-group .home-contact-layout{width:calc(100% - 40px)}body .home-paths h2,body .home-reviews h2{font-size:32px;margin-bottom:28px}body .home-paths-layout{display:flex;flex-direction:column;gap:22px}body .home-paths-photo{height:320px;min-height:0;mask-image:linear-gradient(#000 80%,transparent)}body .home-paths .path-row{padding:24px 0;gap:12px}body .home-paths .path-row h3{font-size:21px;line-height:1.5}body .home-paths .path-row p{font-size:16px}body .home-paths .path-row .inline-link{font-size:14px}body .about-session-group .home-about{padding:45px 0 65px}body .about-session-group .home-about-layout{display:flex;flex-direction:column;gap:30px}body .about-session-group .home-about h2{font-size:36px}body .about-session-group .home-about p{font-size:16px;line-height:1.85}body .about-session-group .home-about-photo{width:100%;height:430px;aspect-ratio:auto;max-width:420px}body .about-session-group .home-contact{padding:48px 0;background:linear-gradient(#fbf5e9ee,#fbf5e9ee),url('./amber-shore-desktop-38d7a6c06c.webp') center/cover}body .about-session-group .home-contact-layout{display:flex;flex-direction:column;gap:25px}body .about-session-group .home-contact h2{font-size:34px}body .about-session-group .home-contact p{font-size:16px}body .about-session-group .home-contact .home-session-price{font-size:42px}body .about-session-group .home-session-details{width:100%}body .home-reviews .review-grid{grid-template-columns:minmax(0,1fr);gap:20px}body .home-reviews .review-card{padding:24px}body .home-reviews .review-card blockquote{font-size:17px;line-height:1.85}body .home-reviews .review-filters{overflow:visible;flex-wrap:wrap}body .home-reviews .review-filters button{font-size:13px;padding:10px 14px}body:has(.home-hero) .site-footer{background-position:left bottom}}
+@media(prefers-reduced-motion:reduce){body:has(.home-hero) *{scroll-behavior:auto!important}}
+body .home-hero h1 .home-hero-tagline{color:#fff0d1!important;-webkit-text-fill-color:#fff0d1!important;font-weight:400!important;background:none!important}
+@media(min-width:701px){body .home-hero.hero-section{background-position:right center;min-height:820px}}
+body .home-reviews::before{opacity:.12}
+body .home-reviews::after{opacity:.9;background:linear-gradient(#fbf5e9e8,#fbf5e9ba,#fbf5e9e8)}
+@media(max-width:700px){body .home-hero.hero-section{background-position:center,right bottom}}
+body .home-reviews .review-filters button.active{background:#103c42!important;color:#fff1d4!important;border-color:#103c42!important}
