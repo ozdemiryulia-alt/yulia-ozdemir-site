@@ -90,3 +90,11 @@ body main:not(:has(.home-hero)) .faq-aside{border-left:1px solid #bea36c;padding
 
 body .home-hero h1 .site-keyphrase{font-weight:400!important;font-family:inherit!important;letter-spacing:-.055em}
 @media(max-width:700px){body .home-hero.hero-section{background-position:center,right bottom}}
+
+/* Continuous shoreline: both illustrations dissolve into the same ivory ground. */
+body .about-session-group .home-about{padding-bottom:175px}
+body .about-session-group .home-about:after{height:190px;background:linear-gradient(180deg,transparent 0%,#fbf5e912 18%,#fbf5e966 43%,#fbf5e9d9 73%,#fbf5e9 98%);inset:auto 0 -1px}
+body .about-session-group .home-contact{background:#fbf5e9;isolation:isolate;padding-top:20px}
+body .about-session-group .home-contact:before{content:"";position:absolute;inset:-70px 0 0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#fbf5e9 0%,#fbf5e9 40%,#fbf5e9cc 57%,#fbf5e940 78%,transparent),url('./amber-sea-hero-20261114.png') right center/cover no-repeat;mask-image:linear-gradient(180deg,transparent 0%,#00000012 12%,#00000066 26%,#000 46%,#000 82%,transparent 100%)}
+body .about-session-group .home-contact:after{height:100px}
+@media(max-width:700px){body .about-session-group .home-about{padding-bottom:125px}body .about-session-group .home-about:after{height:125px}body .about-session-group .home-contact{padding-top:20px}body .about-session-group .home-contact:before{inset:-40px 0 0;background-image:linear-gradient(#fbf5e9e8,#fbf5e9e8),url('./amber-sea-hero-20261114.png')}}
