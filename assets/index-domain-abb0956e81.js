@@ -1,5 +1,5 @@
 import {siteUrl as yuliaSiteUrl, fragmentUrl as yuliaFragmentUrl} from "./portability-domain-c5eae32fed.js";
-import {renderAmberHome} from "./home-amber-sea-20261114-v2.js";
+import {renderAmberHome} from "./home-amber-sea-20261114-v3.js";
 import {createHealthGamePage} from "./health-game-page-v1-domain-40cee7a66b.js";
 import {createChessMysticsPage} from "./chess-mystics-page-v2-domain-5f90ee0555.js";
 function siteAccentRuntimeNov12(raw) {

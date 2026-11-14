@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./cormorant-0-20261114.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./cormorant-1-20261114.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./cormorant-2-20261114.ttf) format('truetype');
+}
+
+/* Approved reference composition, implemented with the original live text. */
+body .home-hero h1>span:first-child{font:400 46px/1.1 'Cormorant Garamond',Georgia,serif;margin-bottom:25px}
+body .home-hero h1 .home-hero-tagline{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:clamp(82px,8.8vw,128px)!important;line-height:.9!important;font-weight:400!important;letter-spacing:-.055em;max-width:780px;color:#ffedcb!important}
+body .home-hero.hero-section{padding-top:65px;padding-bottom:155px;min-height:890px;background-position:right center}
+body .home-hero .hero-content>p{font-size:17px;line-height:1.8;max-width:590px}
+body .home-hero h1{margin-bottom:32px}
+body .home-hero .hero-content{width:min(1320px,calc(100% - 112px))}
+body .home-paths h2,body .home-reviews h2,body .about-session-group :is(.home-about,.home-contact) h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;letter-spacing:-.025em;font-size:62px;line-height:1.08}
+body .home-paths{padding-top:35px;padding-bottom:75px}
+body .home-paths>.page-width{width:min(1320px,calc(100% - 112px))}
+body .home-paths>.page-width>.eyebrow,body .home-paths>.page-width>h2{margin-left:28%}
+body .home-paths-layout{grid-template-columns:minmax(0,.85fr) minmax(0,2.7fr);gap:30px;align-items:stretch}
+body .home-paths .path-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:start}
+body .home-paths .path-row{display:flex;flex-direction:column;align-items:flex-start;gap:15px;border-top:0;border-left:1px solid #dfc9a3;padding:0 0 0 24px;margin:0;height:100%;background:transparent}
+body .home-paths .path-row:first-child{border-left:0;padding-left:0}
+body .home-paths .path-row>span:first-child{font:400 27px/1 'Cormorant Garamond',Georgia,serif;color:#a16c20}
+body .home-paths .path-row h3{font:400 30px/1.12 'Cormorant Garamond',Georgia,serif;letter-spacing:-.01em;margin-bottom:18px}
+body .home-paths .path-row p{font-size:15px;line-height:1.8}
+body .home-paths .path-row .inline-link{font-size:13px;line-height:1.6;margin-top:20px}
+body .home-paths .path-row>svg{margin-top:auto;width:28px;height:28px}
+body .home-paths-photo{min-height:0;mask-image:linear-gradient(90deg,#000 75%,transparent);margin-left:-55px;width:calc(100% + 55px)}
+body .home-paths-photo img{object-position:45% center}
+body .about-session-group .home-about{padding:60px 0 95px;background-position:center bottom}
+body .about-session-group .home-about-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr);gap:55px;align-items:center}
+body .about-session-group .home-about-copy{grid-column:2;grid-row:1}
+body .about-session-group .home-about-photo{grid-column:1;grid-row:1;height:520px;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 82%,transparent);position:relative;overflow:visible}
+body .about-session-group .home-about-photo img{mask-image:linear-gradient(#000 72%,transparent);object-position:center 25%}
+body .about-session-group .home-about:after{content:"";position:absolute;inset:auto 0 -1px;height:60px;background:linear-gradient(transparent,#fbf5e9);pointer-events:none}
+body .about-session-group .home-about p{font:400 24px/1.55 'Cormorant Garamond',Georgia,serif;color:#fff3dc}
+body .about-session-group .home-about .inline-link{font:400 25px/1.3 'Cormorant Garamond',Georgia,serif}
+body .about-session-group .home-contact{position:relative;padding:55px 0 65px;background-image:linear-gradient(90deg,#fbf5e9 0%,#fbf5e9 45%,#fbf5e980 70%,#fbf5e900),url('./amber-sea-hero-20261114.png');background-position:center,right center;background-size:cover}
+body .about-session-group .home-contact:after{content:"";position:absolute;inset:auto 0 0;height:65px;background:linear-gradient(transparent,#fbf5e9);pointer-events:none}
+body .about-session-group .home-contact-layout{display:block;position:relative;z-index:1}
+body .about-session-group .home-session-copy{width:66%}
+body .about-session-group .home-session-copy p{font:400 23px/1.55 'Cormorant Garamond',Georgia,serif;color:#28433f}
+body .about-session-group .home-session-details{width:66%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px 30px;align-items:center;margin-top:30px}
+body .about-session-group .home-session-details .home-session-meta{grid-column:1/-1;font:400 21px/1.6 'Cormorant Garamond',Georgia,serif}
+body .about-session-group .home-session-details .home-session-meta br{display:initial}
+body .about-session-group .home-session-details .home-session-meta br:after{content:none}
+body .about-session-group .home-session-details .home-session-price{font:500 60px/1 'Cormorant Garamond',Georgia,serif;margin:0;white-space:nowrap}
+body .about-session-group .home-session-details .home-session-primary{font:500 23px/1.2 'Cormorant Garamond',Georgia,serif;padding:18px;min-height:60px}
+body .about-session-group .home-session-details .home-session-messengers{grid-column:1/-1;margin:0}
+body .about-session-group .home-session-details .home-session-messengers a{font:400 20px/1.5 'Cormorant Garamond',Georgia,serif}
+body .home-reviews{padding-top:35px;background:#fbf5e9}
+body .home-reviews:before,body .home-reviews:after{content:none}
+body .home-reviews .review-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:45px 50px}
+body .home-reviews .review-card{border:0;border-bottom:1px solid #dfc9a3;background:transparent;padding:0 0 28px;height:100%}
+body .home-reviews .review-grid>.scroll-reveal:nth-child(even) .review-card{border-left:1px solid #dfc9a3;padding-left:35px}
+body .home-reviews .review-card blockquote{font:italic 400 28px/1.35 'Cormorant Garamond',Georgia,serif;color:#1c3735;margin:15px 0 22px}
+body .home-reviews .review-card footer{border:0;padding:0;margin-top:20px;display:flex;flex-wrap:wrap;gap:5px 12px}
+body .home-reviews .review-card footer strong,body .home-reviews .review-card footer span{font:400 18px/1.45 'Cormorant Garamond',Georgia,serif;color:#535747}
+body .home-reviews .review-quote-icon{display:none}
+body .home-reviews .review-video-content strong{font:400 30px/1.25 'Cormorant Garamond',Georgia,serif}
+body .home-reviews .review-topic{font-size:10px;letter-spacing:.2em}
+body .home-reviews .review-video-content{margin-top:18px}
+body .home-reviews .review-source-link{font-size:13px}
+body .home-reviews .review-filters{margin-bottom:45px}
+body main:not(:has(.home-hero)) :is(h1,h2,h3){font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+body main:not(:has(.home-hero)) .faq-group{padding:24px 0 38px;background:transparent}
+body main:not(:has(.home-hero)) .faq-group h2{font-size:38px;margin-bottom:20px;color:#123b40}
+body main:not(:has(.home-hero)) .faq-list details{border:0;border-bottom:1px solid #d7c5a3;border-radius:0;background:transparent;padding:0;margin:0}
+body main:not(:has(.home-hero)) .faq-list details summary{font:500 27px/1.35 'Cormorant Garamond',Georgia,serif;color:#133f43;padding:22px 45px 22px 0;cursor:pointer;min-height:60px}
+body main:not(:has(.home-hero)) .faq-list details[open]{background:#f4ecdd;padding:0 24px;margin:0 -24px;border-bottom-color:#b99552}
+body main:not(:has(.home-hero)) .faq-list details p{font:400 17px/1.85 Manrope,Arial,sans-serif;color:#35524e;padding:0 0 25px;max-width:760px}
+body main:not(:has(.home-hero)) .faq-aside{border-left:1px solid #bea36c;padding-left:24px}
+@media(max-width:1000px){body .home-paths-layout{grid-template-columns:1fr}.home-paths-photo{display:block}body .home-paths-photo{margin-left:0;width:100%;height:350px;mask-image:linear-gradient(#000 80%,transparent)}body .home-paths>.page-width>.eyebrow,body .home-paths>.page-width>h2{margin-left:0}body .home-hero h1 .home-hero-tagline{font-size:90px!important;max-width:650px}body .home-hero .hero-content>p{max-width:530px}}
+@media(max-width:700px){body .home-hero.hero-section{padding-top:35px;padding-bottom:320px;min-height:0}body .home-hero .hero-content{width:calc(100% - 40px)}body .home-hero h1>span:first-child{font-size:33px;margin-bottom:20px}body .home-hero h1 .home-hero-tagline{font-size:clamp(43px,13.5vw,72px)!important;line-height:.98!important;letter-spacing:-.045em;max-width:100%}body .home-hero .hero-content>p{font-size:16px;line-height:1.85}body .home-paths>.page-width{width:calc(100% - 40px)}body .home-paths h2,body .home-reviews h2,body .about-session-group :is(.home-about,.home-contact) h2{font-size:43px;line-height:1.13}body .home-paths .path-list{grid-template-columns:1fr;gap:25px}body .home-paths .path-row,body .home-paths .path-row:first-child{border-left:0;border-top:1px solid #dfc9a3;padding:25px 0 0;gap:14px}body .home-paths .path-row h3{font-size:30px}body .home-paths .path-row p{font-size:16px}body .home-paths-photo{height:350px;min-height:0}body .about-session-group .home-about-layout{display:flex;flex-direction:column;gap:25px}body .about-session-group .home-about-copy{order:2}body .about-session-group .home-about-photo{order:1;width:100%;max-width:400px;height:450px}body .about-session-group .home-about p{font:400 20px/1.6 'Cormorant Garamond',Georgia,serif}body .about-session-group .home-about{padding-top:30px;padding-bottom:75px}body .about-session-group .home-contact{padding:35px 0 65px;background-image:linear-gradient(#fbf5e9f5,#fbf5e9e8),url('./amber-sea-hero-20261114.png')}body .about-session-group .home-session-copy,body .about-session-group .home-session-details{width:100%}body .about-session-group .home-session-details{grid-template-columns:1fr;gap:20px}body .about-session-group .home-session-details .home-session-meta{font-size:21px}body .about-session-group .home-session-details .home-session-meta br{display:initial}body .about-session-group .home-session-details .home-session-meta br:after{content:none}body .about-session-group .home-session-copy p{font-size:21px}body .about-session-group .home-session-details .home-session-price{font-size:50px}body .home-reviews .review-grid{grid-template-columns:1fr;gap:32px}body .home-reviews .review-grid>.scroll-reveal:nth-child(even) .review-card{padding-left:0;border-left:0}body .home-reviews .review-card blockquote{font-size:25px;line-height:1.4}body .home-reviews .review-card footer strong,body .home-reviews .review-card footer span{font-size:18px}body .home-reviews .review-video-content strong{font-size:28px}body main:not(:has(.home-hero)) .faq-list details summary{font-size:24px}body main:not(:has(.home-hero)) .faq-list details[open]{padding:0 15px;margin:0 -15px}body main:not(:has(.home-hero)) .faq-group h2{font-size:32px}body main:not(:has(.home-hero)) .faq-aside{padding-left:15px}}
+
+body .home-hero h1 .site-keyphrase{font-weight:400!important;font-family:inherit!important;letter-spacing:-.055em}
+@media(max-width:700px){body .home-hero.hero-section{background-position:center,right bottom}}
