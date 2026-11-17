@@ -30,7 +30,7 @@ export function renderAmberHome(runtime) {
             i.jsx("span", {
               "data-loc": "client/src/pages/Home.tsx:29",
               className: "eyebrow",
-              children: "Остеопат и мастер Рэйки · Анталия и Москва",
+              children: "Остеопат и мастер Рэйки · Анталия и онлайн",
             }),
             i.jsxs("div",{className:"hero-name-row",children:[i.jsx("span",{className:"hero-person-name",children:"Юлия ОздеМир"}),i.jsx(ye,{href:"/obo-mne",className:"reference-text-link",children:"Познакомиться со мной"})]}),
             i.jsxs("h1", {
