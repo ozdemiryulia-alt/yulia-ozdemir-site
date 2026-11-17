@@ -1,0 +1,41 @@
+# Снимки готового текста страниц для поисковиков и ИИ-помощников.
+# После каждой правки в main открывает все страницы сайта в браузере без окна и кладёт
+# их текст в ветку seo-snapshots. Хостинг RU-CENTER забирает его при обновлении сайта
+# (ru-hosting/build.py) и вставляет в страницы. Сам сайт в main это задание не меняет.
+name: SEO snapshots
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-snapshots
+  cancel-in-progress: true
+
+jobs:
+  snapshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Render pages
+        run: python3 site/.github/seo/seo_snapshot.py site out/snapshots "$(command -v google-chrome)"
+
+      - name: Publish to seo-snapshots branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out
+          git init -q -b seo-snapshots
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Snapshots for ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:seo-snapshots
